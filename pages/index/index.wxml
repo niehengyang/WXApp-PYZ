@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class='heard_view'>
+<form class='login_submit'>
+<view class='username_item'>
+<image class='username_svg' src='/images/mobile-nor.svg'/><input class='bussiness_input' type='text' bindinput='userNameInput' placeholder='输入账号'></input>
+</view>
+<view class='password_item'>
+<image class='password_svg' src='/images/lock-nor.svg'/><input class='bussiness_input' type='text' bindinput='passWordInput' placeholder='输入密码'></input>
+</view>
+<button class='login_submit' bindtap="logIn">登录</button>
+</form>
+</image>
+</view>

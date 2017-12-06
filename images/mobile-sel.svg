@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>entypo/mobile-sel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="entypo/mobile-sel">
+            <rect id="Rectangle-path" x="0" y="0" width="20" height="20"></rect>
+            <path d="M13.344,0.397 L5.819,0.397 C4.73,0.397 3.839,1.288 3.839,2.377 L3.839,17.822 C3.839,18.911 4.73,19.802 5.819,19.802 L13.344,19.802 C14.433,19.802 15.324,18.91 15.324,17.822 L15.324,2.377 C15.324,1.289 14.433,0.397 13.344,0.397 L13.344,0.397 Z M9.581,19.012 C8.816,19.012 8.195,18.569 8.195,18.022 C8.195,17.475 8.816,17.032 9.581,17.032 C10.347,17.032 10.967,17.475 10.967,18.022 C10.967,18.569 10.347,19.012 9.581,19.012 L9.581,19.012 Z M13.74,16.041 L5.423,16.041 L5.423,2.972 L13.74,2.972 L13.74,16.041 L13.74,16.041 Z" id="Shape" fill="#0076FF"></path>
+        </g>
+    </g>
+</svg>
