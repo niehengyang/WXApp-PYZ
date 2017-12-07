@@ -1,0 +1,99 @@
+/**mine.wxss**/
+.heard_box{
+  width: 100%;
+  height: 28.4%;
+}
+.heard_bg{
+  width: 100%;
+}
+.logo_img{
+  width: 154rpx;
+  height: 154rpx;
+  top: 4.8%;
+  left: 40%;
+  position: absolute;
+
+}
+.username_title{
+  width: 100%;
+  height: 84rpx;
+  top: 26%;
+  position: absolute;
+  text-align: center;
+  border: 2rpx solid none;
+}
+.username_value{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 2rpx;
+  
+}
+.logo_svg{
+  top: 7.2%;
+  left: 47%;
+  width: 154rpx;
+  height: 154rpx; 
+}
+.weui-cells {
+    margin-top: 1.17647059em;
+    background-color: #FFFFFF;
+    line-height: 1.47058824;
+    font-size: 34rpx;
+    overflow: hidden;
+    position: relative;
+}
+.weui-cell_access {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: inherit;
+}
+.weui-cell {
+    padding: 20rpx 30rpx;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.weui-cell__bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+.weui-cell_ft{
+  text-align: right;
+  color: #999999;
+}
+.weui-cell_access .weui-cell__ft:after {
+    content: " ";
+    display: inline-block;
+    height: 12rpx;
+    width: 12rpx;
+    border-width: 4rpx 4rpx 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    position: absolute;
+    top: 50%;
+    margin-top: -8rpx;
+    right: 4rpx;
+}
+.weui-cell_access .weui-cell__ft {
+    padding-right: 26rpx;
+    position: relative;
+}
+.weui_exit{
+background: #FFFFFF;
+width: 100%;
+height: 88rpx;
+bottom: 30%;
+}
+.exit{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1A203B;
+  letter-spacing: 40rpx;
+}

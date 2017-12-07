@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>头像</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="46.5" cy="46.5" r="38.5"></circle>
+        <filter x="-3.9%" y="-3.9%" width="107.8%" height="107.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.181733247   0 0 0 0 0.225732868   0 0 0 0 0.391953656  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="86.0569853%" y1="16.1810662%" x2="21.8910846%" y2="87.1622243%" id="linearGradient-3">
+            <stop stop-color="#1082E3" offset="0%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </linearGradient>
+        <path d="M35.5,69.5382353 C54.2987983,69.5382353 69.5382353,54.2987983 69.5382353,35.5 C69.5382353,16.7012017 54.2987983,1.46176471 35.5,1.46176471 C16.7012017,1.46176471 1.46176471,16.7012017 1.46176471,35.5 C1.46176471,54.2987983 16.7012017,69.5382353 35.5,69.5382353 Z M35.5,71 C15.8938914,71 0,55.1061086 0,35.5 C0,15.8938914 15.8938914,0 35.5,0 C55.1061086,0 71,15.8938914 71,35.5 C71,55.1061086 55.1061086,71 35.5,71 Z" id="path-4"></path>
+        <filter x="-514.6%" y="-514.6%" width="1129.1%" height="1129.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="13.610409" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-732.5%" y="-732.5%" width="1565.0%" height="1565.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="17.0915671" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-8">
+            <stop stop-color="#52536B" stop-opacity="0.362007473" offset="0%"></stop>
+            <stop stop-color="#0F1438" stop-opacity="0.0796818388" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="26.5014938%" y1="13.5863448%" x2="100%" y2="78.5103944%" id="linearGradient-9">
+            <stop stop-color="#2CDDFA" offset="0%"></stop>
+            <stop stop-color="#2E8DFC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="头像">
+            <g id="Loading" transform="translate(-7.000000, -7.000000)">
+                <g id="Oval-8-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill-opacity="0.349999994" fill="#02030D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Oval-3" transform="translate(11.000000, 11.000000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-3)" fill-rule="nonzero" xlink:href="#path-4"></use>
+                    <circle fill="#FFFFFF" filter="url(#filter-6)" mask="url(#mask-5)" cx="59.7235294" cy="10.65" r="3.96764706"></circle>
+                </g>
+                <path d="M72.5380039,25.6403372 C73.924403,26.4667354 75.0074698,25.8223596 74.9999612,24.1856492 C74.9924526,22.5489388 73.2006252,20.405993 70.9175355,19.4281512 C68.545785,18.4822374 67.3782196,19.1570423 68.3339944,20.9266232 C69.2279375,22.7184706 71.1042634,24.8309873 72.5380039,25.6403372 Z" id="Oval-3" fill="#FFFFFF" opacity="0.846956623" filter="url(#filter-7)"></path>
+                <path d="M47,79 C64.673112,79 79,64.673112 79,47 C79,29.326888 64.673112,15 47,15 C29.326888,15 15,29.326888 15,47 C15,64.673112 29.326888,79 47,79 Z" id="Oval-8-Copy" fill="url(#radialGradient-8)" opacity="0.635261194"></path>
+            </g>
+            <path d="M40,44 C32.8202983,44 27,38.1797017 27,31 C27,23.8202983 32.8202983,18 40,18 C47.1797017,18 53,23.8202983 53,31 C53,38.1797017 47.1797017,44 40,44 Z M61.6760337,58.0508901 C58.690625,67.5148438 29.9226563,75.8382812 18.0351197,58.0508901 C22.2739044,50.2756237 30.5208582,45 40,45 C49.3016618,45 57.3702861,50.5140067 61.6760337,58.0508901 Z" id="Combined-Shape" fill="url(#linearGradient-9)"></path>
+        </g>
+    </g>
+</svg>

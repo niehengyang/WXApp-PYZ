@@ -1,0 +1,13 @@
+<!--device.wxml-->
+<view class="weui-navbar weui-bar__item_on">
+    <view class="weui-navbar__item weui-bar__item_on">设备</view>
+    <view class="weui-navbar__item">设备组</view>
+</view>
+<view class="weui-search-bar">
+  <form class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search"></icon>
+        <input type="search" class="weui-search-bar__input"  placeholder="Search" required=""></input>
+    </view>
+  </form>
+  </view> 
