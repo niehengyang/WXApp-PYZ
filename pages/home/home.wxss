@@ -1,0 +1,41 @@
+/**home.wxss**/
+page{
+  background-color: #1A203B;
+}
+.logo-show_box{
+  margin-top: 3.7%;
+  width: 100%;
+  height: 36%;
+  text-align: center;
+}
+.logo-bg_svg{
+  width: 480rpx;
+  height: 480rpx;
+}
+.PM-size-show_box{
+  top: 17.5%;
+  width: 100%;
+  height: 174rpx;
+  position: absolute;
+  flex-direction: column-reverse;
+  
+}
+.size_label{
+font-family: PingFangSC-Semibold;
+font-size: 48px;
+color: #FFFFFF;
+letter-spacing: 0.12px;
+display: flex;
+justify-content: center;
+}
+.PM_label{
+font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #FFFFFF;
+letter-spacing: 0.12px;
+display: flex;
+justify-content: center;
+}
+
+
+

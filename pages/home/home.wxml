@@ -1,0 +1,16 @@
+<!--home.wxml-->
+<view class='logo-show_box'>  
+  <image class='logo-bg_svg' src='/images/home/tu1.svg'>
+  </image>
+  <view class='PM-size-show_box'>
+    <label class='size_label'>207</label>
+    <label class='PM_label'>PM2.5</label>
+  </view>
+</view>
+<view class='box1'>
+  <image class='humidity_svg' src='/images/home/humidity.svg'></image>
+  <label class='humidity_size'>温度 28℃</label>
+</view>
+
+<view class='box2'></view>
+<view class='box3'></view>

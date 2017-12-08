@@ -1,14 +1,15 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/login/login",
     "pages/mine/mine",
     "pages/device/device",
+    "pages/home/home",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#1A203B",
-    "navigationBarTitleText": "设备",
+    "navigationBarTitleText": "和智监",
     "navigationBarTextStyle":"white"
   },
 "tabBar":{
@@ -19,7 +20,7 @@
     {
       "selectedIconPath": "/images/tabBar/home_sel.png",
       "iconPath": "/images/tabBar/home.png",
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/home/home",
       "text": "首页"
       },
       {

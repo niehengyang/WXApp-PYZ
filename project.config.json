@@ -21,7 +21,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -32,7 +32,14 @@
 				{
 					"id": -1,
 					"name": "设备",
-					"pathName": "pages/device/device"
+					"pathName": "pages/device/device",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/home",
+					"query": ""
 				}
 			]
 		}
