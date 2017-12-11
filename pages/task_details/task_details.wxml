@@ -1,0 +1,23 @@
+<!--task_details.wxml-->
+<view class='task-details_box'>
+<view class='name_item'>
+<label class='task_name'>任务名称</label>
+<label class='name_size'>名称名称</label>
+</view>
+<view class='device_item'>
+<label class='device_name'>设备</label>
+<label class='device_id'>RX2345678</label>
+</view>
+<view class='time_item'>
+<label class='maede_time'>创建时间</label>
+<label class='time_size'>2017-09-10 12:23</label>
+</view>
+<view class='threshold-value_item'>
+<label class='threshold-value_name'>阈值</label>
+<label class='threshold-value_size'>xxxxxxxxxxxxx</label>
+</view>
+<view class='alarms_item'>
+<label class='number_alarms'>告警次数</label>
+<label class='alarms_size'>12</label>
+</view>
+</view>

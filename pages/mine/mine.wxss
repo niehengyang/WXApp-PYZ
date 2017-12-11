@@ -2,6 +2,8 @@
 .heard_box{
   width: 100%;
   height: 28.4%;
+  display: flex;
+  flex-direction: row;
 }
 .heard_bg{
   width: 100%;
@@ -9,10 +11,9 @@
 .logo_img{
   width: 154rpx;
   height: 154rpx;
-  top: 4.8%;
   left: 40%;
   position: absolute;
-
+  margin-top: 50rpx;
 }
 .username_title{
   width: 100%;

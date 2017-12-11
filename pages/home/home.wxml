@@ -7,10 +7,36 @@
     <label class='PM_label'>PM2.5</label>
   </view>
 </view>
-<view class='box1'>
+<view class='between_box'>
+<view class='humidity_box'>
   <image class='humidity_svg' src='/images/home/humidity.svg'></image>
-  <label class='humidity_size'>温度 28℃</label>
+  <label class='humidity_size'>湿度 81%</label>
 </view>
 
-<view class='box2'></view>
-<view class='box3'></view>
+<view class='temperature_box'>
+<image class='temperature.svg' src='/images/home/temperature.svg'></image>
+<label class='temperature.size'>温度 28℃</label>
+</view>
+<view class='pm_box'>
+<image class='pm.svg' src='/images/home/pm.svg'></image>
+<label class='pm.size'>PM10 200</label>
+</view>
+</view>
+<view class='bottom_box'>
+<view class='data_item'>
+<image class='data_svg' src='/images/home/data.svg'></image>
+<label class='data_name'>实时数据</label>
+</view>
+<view class='monitoring_item'>
+<image class='monitoring_svg' src='/images/home/monitor.svg'></image>
+<label class='monitoring_name'>实时监控</label>
+</view>
+<view class='alarm_item'>
+<image class='alarm_svg' src='/images/home/alarm.svg'></image>
+<label class='alarm_name'>预警</label>
+</view>
+<view class='task_item'>
+<image class='task_svg' src='/images/home/task.svg'></image>
+<label class='task_name'>任务</label>
+</view>
+</view>

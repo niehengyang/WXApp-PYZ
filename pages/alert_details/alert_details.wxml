@@ -1,0 +1,27 @@
+<!--alert_details.wxml-->
+<view class='alert-details_box'>
+<view class='device_item'>
+<label class='device_name'>设备名称</label>
+<label class='device_id'>xerseef33455</label>
+</view>
+<view class='exception-state_item'>
+<label class='exception_state'>异常状态</label>
+<label class='exception_state_value'>温度过高</label>
+</view>
+<view class='time_item'>
+<label class='alarm_time'>告警时间</label>
+<label class='time_size'>2017-09-10 12:23</label>
+</view>
+<view class='Level_item'>
+<label class='Level_name'>级别</label>
+<label class='Level_size'>最高级</label>
+</view>
+<view class='failure_item'>
+<label class='failure_details'>故障详情</label>
+<label class='failure_details_value'>xxxxxxxxxxxxx</label>
+</view>
+<view class='button_item'>
+<button class='processed_btn'>已处理</button>
+<button class='false_positives'>误报</button>
+</view>
+</view>

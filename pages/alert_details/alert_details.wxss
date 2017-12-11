@@ -1,0 +1,77 @@
+/**alert_details.wxss**/
+page{
+  background: #1A203B;
+  display: flex;
+  justify-content: center;
+}
+.alert-details_box{
+  width: 690rpx;
+  height: 1000rpx;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.device_item,.exception-state_item,.time_item,.Level_item,.failure_item{
+width: 660rpx;
+  height: 140rpx;
+  border-bottom: 1px solid ;
+  border-bottom-color: rgba(233,231,239,0.5);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.device_name,.exception_state,.alarm_time,.Level_name,.failure_details{
+font-family: PingFangSC-Regular;
+font-size: 32rpx;
+color: #1A203B;
+letter-spacing: 0.24rpx;
+margin: 20rpx;
+}
+.device_id,.exception_state_value,.time_size,.failure_details_value{
+font-family: PingFangSC-Regular;
+font-size: 32rpx;
+color: #8E98B4;
+letter-spacing: 0.24rpx;
+opacity:0.8;
+}
+.Level_size{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  letter-spacing: 0.24rpx;
+  color: rgba(204,0,0,1);
+}
+.button_item{
+  width: 630rpx;
+  height: 260rpx;
+display: flex;
+flex-direction: row;
+align-content: space-between;
+align-items: flex-end;
+}
+.processed_btn{
+width: 300rpx;
+height: 88rpx;
+background: #0076FF;
+border-radius: 8rpx;
+font-family: PingFangSC-Regular;
+font-size: 18px;
+color: #FFFFFF;
+letter-spacing: 0.24rpx;
+margin: 4rpx;
+}
+.false_positives{
+width: 300rpx;
+height: 88rpx;
+background: #CC0000;
+border-radius: 8rpx;
+font-family: PingFangSC-Regular;
+font-size: 36rpx;
+color: #FFFFFF;
+letter-spacing: 0.24rpx;
+margin: 4rpx;
+}

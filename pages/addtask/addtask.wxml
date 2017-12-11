@@ -1,0 +1,15 @@
+<!--addtask.wxml-->
+<view class='addtask_box'>
+<view class='name_item'>
+<label class='task_name'>名称</label>
+<input class='name_input' type='text' placeholder='输入任务名称'></input>
+</view>
+<view class='device_item'>
+<label class='device_name'>设备</label>
+<input class='device_input' type='text' placeholder='输入设备编号'></input>
+</view>
+<view class='threshold-value_item'>
+<label class='threshold-value_name'>阈值</label>
+<input class='threshold-value_input' type='text' placeholder='输入阈值'></input>
+</view>
+</view>

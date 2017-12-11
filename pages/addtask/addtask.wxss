@@ -1,0 +1,41 @@
+/**addtask.wxss**/
+page{
+  background: #1A203B;
+  display: flex;
+  justify-content: center;
+}
+.addtask_box{
+  width: 690rpx;
+  height: 1000rpx;
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.name_item,.device_item,.threshold-value_item{
+  width: 660rpx;
+  height: 100rpx;
+  border-bottom: 1px solid ;
+  border-bottom-color: rgba(233,231,239,1);
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.task_name,.device_name,.threshold-value_name{
+font-family: PingFangSC-Regular;
+font-size: 32rpx;
+color: #1A203B;
+letter-spacing: 0.24rpx;
+margin: 20rpx;
+}
+.name_input,.device_input,.threshold-value_input{
+width: 550rpx;
+font-family: PingFangSC-Regular;
+font-size: 28rpx;
+color: #AAB7D4;
+letter-spacing: 0.2rpx;
+opacity:0.5;
+}

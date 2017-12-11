@@ -1,16 +1,20 @@
 {
   "pages":[
     "pages/login/login",
-    "pages/mine/mine",
-    "pages/device/device",
     "pages/home/home",
+    "pages/mine/mine",
+    "pages/addtask/addtask",
+    "pages/task_details/task_details",
+    "pages/alert_details/alert_details",
+    "pages/task/task",
+    "pages/device/device",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1A203B",
-    "navigationBarTitleText": "和智监",
-    "navigationBarTextStyle":"white"
+    "navigationBarTitleText": "page_name",
+    "navigationBarTextStyle": "white"
   },
 "tabBar":{
   "color": "#a9b7b7",

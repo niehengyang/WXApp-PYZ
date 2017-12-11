@@ -1,0 +1,60 @@
+/**task.wxss**/
+page{
+  background: #1A203B;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+.addtask_item{
+width: 690rpx;
+height: 140rpx;
+background: #FFFFFF;
+display: flex;
+border-radius: 4px;
+align-items: center;
+align-content: center;
+margin-top: 20rpx; 
+}
+.addtask_btn{
+width: 70rpx;
+height: 100rpx;
+font-family: PingFangSC-Regular;
+font-size: 100rpx;
+color:rgba(0,118,255,1);
+margin: 20rpx;
+display: flex;
+align-items: center;
+}
+.add_task{
+font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #1A203B;
+letter-spacing: 0.12px;
+}
+.name_item{
+width: 690rpx;
+height: 140rpx;
+background: #FFFFFF;
+display: flex;
+border-radius: 4px;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+margin-top: 20rpx;
+}
+.task_name{
+font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #1A203B;
+letter-spacing: 0.12px;
+margin-left: 30rpx;
+}
+.task_time{
+font-family: PingFangSC-Regular;
+font-size: 12px;
+color: #8E98B4;
+letter-spacing: 0.12px;
+margin-left: 30rpx;
+}

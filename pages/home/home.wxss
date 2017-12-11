@@ -3,22 +3,26 @@ page{
   background-color: #1A203B;
 }
 .logo-show_box{
-  margin-top: 3.7%;
   width: 100%;
-  height: 36%;
-  text-align: center;
+  height: 480rpx;
+  margin-top: 65rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo-bg_svg{
   width: 480rpx;
   height: 480rpx;
+  justify-content: center;
+  display: flex;
 }
 .PM-size-show_box{
-  top: 17.5%;
-  width: 100%;
-  height: 174rpx;
+  width: 250rpx;
+  height: 200rpx;
   position: absolute;
-  flex-direction: column-reverse;
-  
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .size_label{
 font-family: PingFangSC-Semibold;
@@ -27,6 +31,7 @@ color: #FFFFFF;
 letter-spacing: 0.12px;
 display: flex;
 justify-content: center;
+margin-top: 30rpx;
 }
 .PM_label{
 font-family: PingFangSC-Regular;
@@ -36,6 +41,76 @@ letter-spacing: 0.12px;
 display: flex;
 justify-content: center;
 }
-
+.between_box{
+  margin-top: 68rpx;
+  margin-bottom: 50rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.humidity_box,.temperature_box{
+ width: 200rpx;
+ height: 120rpx;
+ border-right: 1rpx solid;
+ border-right-color: rgba(233,231,239,0.13);
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.pm_box{
+  width: 200rpx;
+ height: 120rpx;
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.humidity_svg,.temperature.svg,.pm.svg{
+  width: 64rpx;
+  height: 64rpx;
+  margin-bottom: 20rpx;
+}
+ .pm.size, .temperature.size, .humidity_size{
+font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #A4AAB3;
+letter-spacing: 0.12px;
+}
+.bottom_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.data_item,.monitoring_item,.alarm_item,.task_item{
+width: 321.8rpx;
+height: 140rpx;
+background: #2E3450;
+border-radius: 4px;
+margin: 5rpx;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+.data_svg,.monitoring_svg,.alarm_svg,.task_svg{
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+}
+.data_name,.monitoring_name,.alarm_name,.task_name{
+font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #FFFFFF;
+letter-spacing: 0.12px;
+}
+.alarm_name,.task_name{
+text-indent: 30rpx;
+}
 
 

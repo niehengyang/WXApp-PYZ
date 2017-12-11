@@ -1,0 +1,9 @@
+<!--task.wxml-->
+<view class='addtask_item'>
+<label class='addtask_btn'>+</label>
+<label class='add_task'>添加任务</label>
+</view>
+<view class='name_item'>
+<label class='task_name'>任务名称</label>
+<label class='task_time'>2017-07-10  12：30</label>
+</view>
