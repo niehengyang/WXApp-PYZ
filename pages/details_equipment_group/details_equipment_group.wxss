@@ -1,0 +1,131 @@
+/**details_equipment_group.wxss**/
+.page_start{
+  width: 100%;
+  height: 1206rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F0F0F0;
+}
+.group_info{
+width: 650rpx;
+height: 170rpx;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.group-name{
+  width: 650rpx;
+  height: 80rpx;
+  border-bottom: 1px solid rgba(35,66,103,0.39) ;
+  display: flex;
+  align-items: center;
+  text-indent: 10rpx;
+}
+.group_name{
+
+font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #1A203B;
+letter-spacing: -0.08px;
+}
+.tel_item{
+  width: 650rpx;
+  height: 80rpx;
+display: flex;
+align-items: center;
+}
+.address_icon{
+width: 40rpx;
+height: 40rpx;
+margin: 10rpx;
+}
+.address_value{
+font-family: PingFangSC-Regular;
+font-size: 16px;
+color: #1A203B;
+letter-spacing: -0.11px;
+}
+.device-card_box{
+  width: 690rpx;
+  height: 290rpx;
+  background: #FFFFFF;
+  box-shadow: 0 4rpx 12rpx 0 rgba(170,183,212,0.80);
+  border-radius: 8rpx;
+  margin-left: 30rpx;
+  margin-right:30rpx; 
+  margin-bottom: 25rpx;
+  align-items: center;
+}
+.deivce-id_item{
+  border: none;
+}
+
+.device-id{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1A203B;
+  letter-spacing: 1rpx;
+  margin: 20rpx;
+}
+.device-size_item{
+  width: 100%;
+  height: 34rpx;
+}
+.device-del{
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #8E98B4;
+  letter-spacing: 1rpx;
+  float: left;
+  margin-left: 20rpx;
+}
+.device-style{
+font-family: PingFangSC-Regular;
+font-size: 24rpx;
+color: #8E98B4;
+letter-spacing: 1rpx;
+float: right;
+margin-right:20rpx; 
+}
+.device-show_box{
+  height: 150rpx;
+  opacity: 0.19;
+  background: rgba(84,141,236,0.50);
+  border-radius: 8rpx;
+  margin: 30rpx;
+  display: flex;
+  text-align: center;
+}
+.humidity_item{
+  flex: 1;
+  margin-top:30rpx; 
+  text-align: center;
+}
+  .humidity_svg{
+    width: 50rpx;
+    height: 64rpx;
+  }
+  .humidity_size{
+    width: 152rpx;
+    height: 100rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 36px;
+    letter-spacing: -0.08px;
+  }
+  .temperature_item{
+    flex: 1;
+    margin-top:30rpx;
+    text-align: center;
+  }
+  .temperature_svg{
+  width: 44rpx;
+  height: 64rpx;
+  }
+  .temperature_size{
+  width: 138rpx;
+  height: 100rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 36px;
+  letter-spacing: -0.08px;
+  }

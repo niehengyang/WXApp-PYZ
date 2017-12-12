@@ -50,6 +50,7 @@ font-size: 16px;
 color: #1A203B;
 letter-spacing: 0.12px;
 margin-left: 30rpx;
+margin-bottom: 20rpx; 
 }
 .task_time{
 font-family: PingFangSC-Regular;

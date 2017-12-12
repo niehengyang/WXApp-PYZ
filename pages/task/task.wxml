@@ -7,3 +7,7 @@
 <label class='task_name'>任务名称</label>
 <label class='task_time'>2017-07-10  12：30</label>
 </view>
+<view class='name_item'>
+<label class='task_name'>任务名称</label>
+<label class='task_time'>2017-07-10  12：30</label>
+</view>

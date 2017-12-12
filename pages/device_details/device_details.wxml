@@ -1,0 +1,56 @@
+<!--device_details.wxml-->
+<view class='page_start'>
+  <view class='group_info'>
+    <view class='group-name'>
+      <label class='group_name'>设备RE2344677</label>
+    </view>
+    <view class='tel_item'>
+      <image class='address_icon' src='/images/device/address.svg'></image>
+      <label class='address_value'>地址:北京市海淀区知春路9号</label>
+    </view>
+  </view>
+  <view class='device-status_box'>
+    <view class='status_left'>
+      <view class='attribute_item'>
+      <label class='device_attribute'>灵敏度:</label>
+      <label class='attaribute_size'>xxxxxxxx</label>
+      </view>
+      <view class='attribute_item'>
+      <label class='device_attribute'>编号:</label>
+      <label class='attaribute_size'>xxxxxxxx</label>
+      </view>
+      <view class='attribute_item'>
+      <label class='device_attribute'>属性3:</label>
+      <label class='attaribute_size'>xxxxxxxx</label>
+      </view>
+      <view class='attribute_item'>
+      <label class='device_attribute'>属性4:</label>
+      <label class='attaribute_size'>xxxxxxxx</label>
+      </view>
+    </view>
+    <view class='status_right'>
+      <view class='status_item'>
+        <label class='status_name'>状态:</label>
+        <label class='status_value'>良好</label>
+      </view>
+    </view>
+  </view>
+  <view class='status-show_box'>
+    <view class='humidity_item'>
+      <image class='humidity_svg' src='/images/device/humidity.svg'></image>
+      <label class='humidity_size'>78%</label>
+    </view>
+    <view class='temperature_item'>
+      <image class='temperature_svg' src='/images/device/temperature.svg'></image>
+      <label class='temperature_size'>31℃</label>
+    </view>
+    <view class='wind-power_item'>
+      <image class='wind_svg' src='/images/device/wind.svg'></image>
+      <label class='wind_size'>？</label>
+    </view>
+    <view class='weather_item'>
+      <image class='shape_svg' src='/images/device/shape.svg'></image>
+      <label class='shape_size'>？</label>
+    </view>
+  </view>
+</view>

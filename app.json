@@ -3,17 +3,21 @@
     "pages/login/login",
     "pages/home/home",
     "pages/mine/mine",
+    "pages/device/device",
     "pages/addtask/addtask",
     "pages/task_details/task_details",
     "pages/alert_details/alert_details",
     "pages/task/task",
-    "pages/device/device",
+    "pages/early_warning/early_warning",
+    "pages/device_group/device_group",
+    "pages/details_equipment_group/details_equipment_group",
+    "pages/device_details/device_details",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#1A203B",
-    "navigationBarTitleText": "page_name",
+    "navigationBarTitleText": "page_title",
     "navigationBarTextStyle": "white"
   },
 "tabBar":{

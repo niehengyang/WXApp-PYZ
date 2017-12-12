@@ -1,0 +1,69 @@
+<!--details_equipment_group.wxml-->
+<view class='page_start'>
+  <view class='group_info'>
+    <view class='group-name'>
+      <label class='group_name'>组名称</label>
+    </view>
+      <view class='tel_item'>
+       <image class='address_icon' src='/images/device/address.svg'></image>
+       <label class='address_value'>地址:北京市海淀区知春路9号</label>
+      </view>
+  </view>
+  <view class='device-card_box'>
+  <view class='deivce-id_item'>
+    <label class='device-id'>设备RE2344677</label>
+  </view>
+  <view class='device-size_item'>
+    <label class='device-del'>地址:北京市海淀区知春路9号</label>
+    <label class='device-style'>灵敏度/编号</label>
+  </view>
+  <view class='device-show_box'>
+    <view class='humidity_item'>
+      <image class='humidity_svg' src='/images/device/humidity.svg'></image>
+      <label class='humidity_size'>78%</label>
+    </view>
+    <view class='temperature_item'>
+      <image class='temperature_svg' src='/images/device/temperature.svg'></image>
+      <label class='temperature_size'>31℃</label>
+    </view>
+  </view>
+</view>
+  <view class='device-card_box'>
+  <view class='deivce-id_item'>
+    <label class='device-id'>设备RE2344677</label>
+  </view>
+  <view class='device-size_item'>
+    <label class='device-del'>地址:北京市海淀区知春路9号</label>
+    <label class='device-style'>灵敏度/编号</label>
+  </view>
+  <view class='device-show_box'>
+    <view class='humidity_item'>
+      <image class='humidity_svg' src='/images/device/humidity.svg'></image>
+      <label class='humidity_size'>78%</label>
+    </view>
+    <view class='temperature_item'>
+      <image class='temperature_svg' src='/images/device/temperature.svg'></image>
+      <label class='temperature_size'>31℃</label>
+    </view>
+  </view>
+</view>  
+  <view class='device-card_box'>
+  <view class='deivce-id_item'>
+    <label class='device-id'>设备RE2344677</label>
+  </view>
+  <view class='device-size_item'>
+    <label class='device-del'>地址:北京市海淀区知春路9号</label>
+    <label class='device-style'>灵敏度/编号</label>
+  </view>
+  <view class='device-show_box'>
+    <view class='humidity_item'>
+      <image class='humidity_svg' src='/images/device/humidity.svg'></image>
+      <label class='humidity_size'>78%</label>
+    </view>
+    <view class='temperature_item'>
+      <image class='temperature_svg' src='/images/device/temperature.svg'></image>
+      <label class='temperature_size'>31℃</label>
+    </view>
+  </view>
+</view>  
+</view>
