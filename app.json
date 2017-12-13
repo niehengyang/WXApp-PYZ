@@ -10,6 +10,7 @@
     "pages/task/task",
     "pages/early_warning/early_warning",
     "pages/device_group/device_group",
+    "pages/real_time_data/real_time_data",
     "pages/details_equipment_group/details_equipment_group",
     "pages/device_details/device_details",
     "pages/logs/logs"

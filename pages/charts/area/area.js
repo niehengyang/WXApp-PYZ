@@ -1,14 +1,11 @@
-// pages/device/device.js
-
+// pages/charts/area/area.js
 Page({
 
   /**
    * 页面的初始数据
    */
-  
-  
   data: {
-    
+  
   },
 
   /**

@@ -21,7 +21,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 10,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -87,6 +87,12 @@
 					"id": -1,
 					"name": "设备详情",
 					"pathName": "pages/device_details/device_details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "实时数据",
+					"pathName": "pages/real_time_data/real_time_data",
 					"query": ""
 				}
 			]
