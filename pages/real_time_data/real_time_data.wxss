@@ -1,28 +1,31 @@
 /**real_time_data.wxss**/
-page{
-  background: #1A203B;
+
+page {
+  background: #1a203b;
   display: flex;
   align-items: center;
   align-content: center;
   flex-direction: column;
-
 }
-.real_time-temperature_box{
+
+.real_time-temperature_box {
   width: 690rpx;
   height: 400rpx;
   border-radius: 8rpx;
   margin-top: 20rpx;
-  background-color: #ffffff;
+  background-color: #fff;
 }
-.real_time-temperature_label{
+
+.real_time-temperature_label {
   width: 222rpx;
   height: 44rpx;
   font-family: PingFangSC-Light;
   font-size: 16px;
-  color: #8E98B4;
-  margin-left:20rpx; 
+  color: #8e98b4;
+  margin-left: 20rpx;
 }
+
 .canvas {
-    width:100%;
-    height:200px;
+  width: 100%;
+  height: 200px;
 }

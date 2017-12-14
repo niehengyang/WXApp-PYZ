@@ -1,58 +1,66 @@
 /**device_details.wxss**/
-.page_start{
+
+.page_start {
   width: 100%;
   height: 1206rpx;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
-.group_info{
-width: 650rpx;
-height: 170rpx;
-display: flex;
-align-items: center;
-flex-direction: column;
-}
-.group-name{
+
+.group_info {
   width: 650rpx;
+  height: 170rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.group-name {
+  width: 660rpx;
   height: 80rpx;
-  border-bottom: 1px solid rgba(35,66,103,0.39) ;
+  border-bottom: 1px solid rgba(35, 66, 103, 0.39);
   display: flex;
   align-items: center;
   text-indent: 10rpx;
 }
-.group_name{
-width: 650rpx;
-height: 44rpx;
-font-family: PingFangSC-Regular;
-font-size: 32rpx;
-color: #1A203B;
-letter-spacing: -0.08px;
+
+.group_name {
+  width: 660rpx;
+  height: 44rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1a203b;
+  letter-spacing: -0.08px;
 }
-.tel_item{
-  width: 650rpx;
+
+.tel_item {
+  width: 660rpx;
   height: 80rpx;
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
-.address_icon{
-width: 40rpx;
-height: 40rpx;
-margin: 10rpx;
+
+.address_icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 10rpx;
 }
-.address_value{
-font-family: PingFangSC-Regular;
-font-size: 32rpx;
-color: #1A203B;
-letter-spacing: -0.22rpx;
+
+.address_value {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1a203b;
+  letter-spacing: -0.22rpx;
 }
-.device-status_box{
+
+.device-status_box {
   width: 690rpx;
   height: 240rpx;
-  background: #FFFFFF;
+  background: #fff;
   margin-bottom: 30rpx;
-  box-shadow: 0 2px 6px 0 rgba(170,183,212,0.80);
+  box-shadow: 0 2px 6px 0 rgba(170, 183, 212, 0.80);
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -60,18 +68,19 @@ letter-spacing: -0.22rpx;
   align-items: center;
   flex-direction: row;
 }
-.status_left{
+
+.status_left {
   width: 400rpx;
   height: 196rpx;
-  border-right: 1px solid #E9E7EF;
+  border-right: 1px solid #e9e7ef;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   flex-direction: column;
-
 }
-.status_right{
+
+.status_right {
   width: 290rpx;
   height: 196rpx;
   display: flex;
@@ -79,70 +88,78 @@ letter-spacing: -0.22rpx;
   align-content: center;
   align-items: center;
 }
-.attribute_item{
-width: 380rpx;
-height: 44rpx;
-display: flex;
-align-content: center;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
+
+.attribute_item {
+  width: 380rpx;
+  height: 44rpx;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.device_attribute{
+
+.device_attribute {
   width: 72rpx;
   height: 34rpx;
-font-family: PingFangSC-Regular;
-font-size: 24rpx;
-color: #8E98B4;
-letter-spacing: -0.16rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #8e98b4;
+  letter-spacing: -0.16rpx;
 }
-.attaribute_size{
+
+.attaribute_size {
   text-align: center;
   width: 200rpx;
   height: 44rpx;
-font-family: PingFangSC-Regular;
-font-size: 32rpx;
-color: #1A203B;
-letter-spacing: -0.16rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1a203b;
+  letter-spacing: -0.16rpx;
 }
-.status_item{
-width: 196rpx;
-height: 196rpx;
-display: flex;
-justify-content: center;
-align-content: center;
-align-items: center;
-flex-direction: column;
+
+.status_item {
+  width: 196rpx;
+  height: 196rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.status_name{
-width: 60rpx;
-height: 44rpx;
-font-family: PingFangSC-Regular;
-font-size: 12px;
-color: #8E98B4;
-letter-spacing: -0.08px;
+
+.status_name {
+  width: 70rpx;
+  height: 44rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #8e98b4;
+  letter-spacing: -0.08px;
 }
-.status_value{
-width: 98rpx;
-height: 66rpx;
-font-family: PingFangSC-Regular;
-font-size: 24px;
-color: #4298FB;
-letter-spacing: 0.12px;
+
+.status_value {
+  width: 110rpx;
+  height: 66rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #4298fb;
+  letter-spacing: 0.24rpx;
 }
-.status-show_box{
+
+.status-show_box {
   width: 690rpx;
   height: 480rpx;
-  background: #FFFFFF;
-box-shadow: 0 2px 6px 0 rgba(170,183,212,0.80);
-border-radius: 4px;
-display: flex;
-justify-content: center;
-align-content: center;
-align-items: center;
-flex-wrap: wrap;
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgba(170, 183, 212, 0.80);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.humidity_item,.temperature_item,.wind-power_item,.weather_item{
+
+.humidity_item, .temperature_item, .wind-power_item, .weather_item {
   width: 300rpx;
   height: 201rpx;
   display: flex;
@@ -151,22 +168,26 @@ flex-wrap: wrap;
   align-content: center;
   flex-direction: row;
 }
-.humidity_item,.temperature_item{
-  border-bottom: 1px solid #F0F0F4;
+
+.humidity_item, .temperature_item {
+  border-bottom: 2rpx solid #f0f0f4;
 }
-.temperature_item,.weather_item{
-  border-left: 1px solid #F0F0F4;
+
+.temperature_item, .weather_item {
+  border-left: 2rpx solid #f0f0f4;
 }
-.humidity_svg,.temperature_svg,.wind_svg,.shape_svg{
+
+.humidity_svg, .temperature_svg, .wind_svg, .shape_svg {
   width: 70rpx;
   height: 90rpx;
   margin: 10rpx;
 }
-.humidity_size,.temperature_size,.wind_size,.shape_size{
-  width: 152rpx;
+
+.humidity_size, .temperature_size, .wind_size, .shape_size {
+  width: 155rpx;
   height: 100rpx;
   font-family: PingFangSC-Regular;
-font-size: 36px;
-color: #8E98B4;
-letter-spacing: -0.08px;
+  font-size: 36px;
+  color: #8e98b4;
+  letter-spacing: -0.08px;
 }

@@ -1,141 +1,160 @@
 /**device_group.wxss**/
-/**以下是头部分页栏样式**/
-page,
-.page,
-.page__bd{
-    height: 100%;
-   
-}
-.page__bd{
-    padding-bottom: 0;
-}
-.weui-tab__content{
-    padding-top: 60px;
-    text-align: center;
-    
-}
-.weui-navbar__slider{
-  width: 374rpx;
-  background-color: #005BEA; 
-}
-.weui-navbar__item{
-  background: #1A203B;
-font-family: PingFangSC-Regular;
-font-size: 32rpx;
-color: #A0A0A0;
-letter-spacing: -0.16rpx;
-}
-.weui-navbar__item.weui-bar__item_on {
-color: #005BEA;
 
+/**以下是头部分页栏样式**/
+
+page, .page, .page__bd {
+  height: 100%;
+}
+
+.page__bd {
+  padding-bottom: 0;
+}
+
+.weui-tab__content {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.weui-navbar__slider {
+  width: 374rpx;
+  background-color: #005bea;
+}
+
+.weui-navbar__item {
+  background: #1a203b;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #a0a0a0;
+  letter-spacing: -0.16rpx;
+}
+
+.weui-navbar__item.weui-bar__item_on {
+  color: #005bea;
 }
 
 /**以下是搜索框样式**/
-.weui-search-bar{
-width: 100%;
-border: unset;
-background: #F0F0F0;
+
+.weui-search-bar {
+  width: 100%;
+  border: unset;
+  background: #f0f0f0;
 }
-.searchbar-result{
-    margin-top: 0;
-    font-size: 14px;
+
+.searchbar-result {
+  margin-top: 0;
+  font-size: 14px;
 }
-.searchbar-result:before{
-    display: none;
+
+.searchbar-result:before {
+  display: none;
 }
-.weui-cell{
-    padding: 12px 15px 12px 35px;
+
+.weui-cell {
+  padding: 12px 15px 12px 35px;
 }
+
 .weui-tab__content {
   width: 375px;
   height: 558px;
-padding-top:10rpx;
-display: flex;
-flex-direction: column;
-text-align:center;
-align-items: center;
-align-content: center;
-background:	#F0F0F0;
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background: #f0f0f0;
 }
-.weui-search-bar__label{
-  background-color:	#E0E0E0;
-}
-/**以下是信息卡样式**/
-.device-info_card{
 
+.weui-search-bar__label {
+  background-color: #e0e0e0;
+}
+
+/**以下是信息卡样式**/
+
+.device-info_card {
   width: 690rpx;
   height: 240rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background: #FFFFFF;
-  box-shadow: 0 2px 6px 0 rgba(170,183,212,0.80);
+  background: #fff;
+  box-shadow: 0 2px 6px 0 rgba(170, 183, 212, 0.80);
   margin-bottom: 20rpx;
   border-radius: 4px;
 }
-.nav_item{
+
+.nav_item {
   width: 650rpx;
   height: 60rpx;
   text-align: center;
 }
-.team_name{
-width: 96rpx;
-height: 44rpx;
-font-family: PingFangSC-Regular;
-font-size: 16px;
-color: #1A203B;
-letter-spacing: -0.08px;
-float: left;
+
+.team_name {
+  width: 96rpx;
+  height: 44rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #1a203b;
+  letter-spacing: -0.08px;
+  float: left;
 }
-.team-company{
-width: 132rpx;
-height: 34rpx;
-font-family: PingFangSC-Regular;
-font-size: 12px;
-color: #8E98B4;
-letter-spacing: -0.08px;
-float: right;
+
+.team-company {
+  width: 132rpx;
+  height: 34rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #8e98b4;
+  letter-spacing: -0.08px;
+  float: right;
 }
-.device-show_box{
+
+.device-show_box {
   width: 650rpx;
   height: 150rpx;
   opacity: 0.19;
-  background: rgba(84,141,236,0.50);
+  background: rgba(84, 141, 236, 0.50);
   border-radius: 8rpx;
   margin: 10rpx;
   display: flex;
   text-align: center;
 }
-.humidity_item{
+
+.humidity_item {
   flex: 1;
-  margin-top:30rpx; 
+  margin-top: 30rpx;
   text-align: center;
 }
-  .humidity_svg{
-    width: 50rpx;
-    height: 64rpx;
-  }
-  .humidity_size{
-    width: 152rpx;
-    height: 100rpx;
-    font-family: PingFangSC-Regular;
-    font-size: 36px;
-    letter-spacing: -0.08px;
-  }
-  .temperature_item{
-    flex: 1;
-    margin-top:30rpx;
-    text-align: center;
-  }
-  .temperature_svg{
+
+.humidity_svg {
+  width: 50rpx;
+  height: 64rpx;
+}
+
+.humidity_size {
+  width: 152rpx;
+  height: 100rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 36px;
+  letter-spacing: -0.08px;
+}
+
+.temperature_item {
+  flex: 1;
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.temperature_svg {
   width: 44rpx;
   height: 64rpx;
-  }
-  .temperature_size{
+}
+
+.temperature_size {
   width: 138rpx;
   height: 100rpx;
   font-family: PingFangSC-Regular;
   font-size: 36px;
   letter-spacing: -0.08px;
-  }
+}

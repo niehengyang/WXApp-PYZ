@@ -23,20 +23,20 @@
 </view>
 </view>
 <view class='bottom_box'>
-<view class='data_item'>
+<button class='data_item' bindtap='real_time_data'>
 <image class='data_svg' src='/images/home/data.svg'></image>
 <label class='data_name'>实时数据</label>
-</view>
-<view class='monitoring_item'>
+</button>
+<button class='monitoring_item' bindtap='real_time_monitoring'>
 <image class='monitoring_svg' src='/images/home/monitor.svg'></image>
 <label class='monitoring_name'>实时监控</label>
-</view>
-<view class='alarm_item'>
+</button>
+<button class='alarm_item' bindtap='early_warning'>
 <image class='alarm_svg' src='/images/home/alarm.svg'></image>
 <label class='alarm_name'>预警</label>
-</view>
-<view class='task_item'>
+</button>
+<button class='task_item' bindtap='task'>
 <image class='task_svg' src='/images/home/task.svg'></image>
 <label class='task_name'>任务</label>
-</view>
+</button>
 </view>

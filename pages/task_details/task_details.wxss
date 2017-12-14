@@ -1,13 +1,15 @@
 /**task_details.wxss**/
-page{
-  background: #1A203B;
+
+page {
+  background: #1a203b;
   display: flex;
   justify-content: center;
 }
-.task-details_box{
+
+.task-details_box {
   width: 690rpx;
   height: 1000rpx;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 4px;
   margin-top: 20rpx;
   display: flex;
@@ -15,33 +17,37 @@ page{
   flex-wrap: wrap;
   align-content: flex-start;
 }
-.name_item,.device_item,.time_item,.threshold-value_item,.alarms_item{
+
+.name_item, .device_item, .time_item, .threshold-value_item, .alarms_item {
   width: 660rpx;
   height: 140rpx;
-  border-bottom: 1px solid ;
-  border-bottom-color: rgba(233,231,239,0.5);
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(233, 231, 239, 0.5);
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-between;
 }
-.task_name,.device_name,.maede_time,.threshold-value_name,.number_alarms{
-font-family: PingFangSC-Regular;
-font-size: 32rpx;
-color: #1A203B;
-letter-spacing: 0.24rpx;
-margin: 20rpx;
+
+.task_name, .device_name, .maede_time, .threshold-value_name, .number_alarms {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #1a203b;
+  letter-spacing: 0.24rpx;
+  margin: 20rpx;
 }
-.name_size,.device_id,.time_size,.threshold-value_size{
-font-family: PingFangSC-Regular;
-font-size: 32rpx;
-color: #8E98B4;
-letter-spacing: 0.24rpx;
-opacity:0.6;
+
+.name_size, .device_id, .time_size, .threshold-value_size {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #8e98b4;
+  letter-spacing: 0.24rpx;
+  opacity: 0.6;
 }
-.alarms_size{
+
+.alarms_size {
   font-family: PingFangSC-Regular;
   font-size: 16px;
   letter-spacing: 0.12px;
-  color: rgba(204,0,0,1);
+  color: rgba(204, 0, 0, 1);
 }

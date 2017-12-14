@@ -1,13 +1,15 @@
 <!--index.wxml-->
 <view class='heard_view'>
-<image class='bg_image' src='/images/login/login_bg.png'/>
+  <image class='bg_image' src='/images/login/login_bg.png' />
 </view>
 <form class='login_box'>
-<view class='username_item'>
-<image class='username_svg' src='/images/login/mobile-nor.svg'/><input class='bussiness_input' type='text' bindinput='userNameInput' placeholder='输入账号'></input>
-</view>
-<view class='password_item'>
-<image class='password_svg' src='/images/login/lock-nor.svg'/><input class='bussiness_input' type='text' bindinput='passWordInput' placeholder='输入密码'></input>
-</view>
-<button class='login_submit' bindtap="logIn">登录</button>
+  <view class='username_item'>
+    <image class='username_svg' src='/images/login/mobile-nor.svg' />
+    <input class='bussiness_input' type='text' bindinput='userNameInput' placeholder='输入账号'></input>
+  </view>
+  <view class='password_item'>
+    <image class='password_svg' src='/images/login/lock-nor.svg' />
+    <input class='bussiness_input' type='text' bindinput='passWordInput' password="true" placeholder='输入密码'></input>
+  </view>
+  <button class='login_submit' bindtap="logIn">登录</button>
 </form>

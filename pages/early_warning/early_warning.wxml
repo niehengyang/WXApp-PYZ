@@ -13,7 +13,7 @@
       <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
         <view class="weui-tab__panel">
           <view class='already-processed_box'>
-            <view class='processed_item'>
+            <view class='processed_item' bindtap='alert_details01'>
               <label class='red_icon'></label>
               <view class='device_item'>
                 <view class='device_label'>
@@ -48,8 +48,8 @@
       </view>
       <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
         <view class="weui-tab__panel">
-          <view class='already-processed_box'>
-           设备组页面内容
+          <view class='already-processed_box' bindtap='Pending'>
+           待处理界面内容
           </view>
         </view>
       </view>

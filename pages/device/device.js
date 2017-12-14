@@ -34,7 +34,28 @@ Page({
       inputVal: e.detail.value
     });
   },
-
+  device_details01: function () {
+    wx.navigateTo({
+      url: '/pages/device_details/device_details',
+      //接口调用成功的回调方法
+      fuccess: function () { },
+      //接口调用失败的回调方法
+      fail: function () { },
+      //接口调用无论成功或者失败的回调方法
+      complete: function () { }
+    })
+  },
+  details_equipment_group01: function () {
+    wx.navigateTo({
+      url: '/pages/details_equipment_group/details_equipment_group',
+      //接口调用成功的回调方法
+      fuccess: function () { },
+      //接口调用失败的回调方法
+      fail: function () { },
+      //接口调用无论成功或者失败的回调方法
+      complete: function () { }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -100,7 +121,20 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '自定义转发标题',
+      path: '/page/user?id=123',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
 })
