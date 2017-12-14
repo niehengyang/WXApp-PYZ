@@ -19,7 +19,7 @@ margin-top: 20rpx;
 }
 .addtask_btn{
 width: 70rpx;
-height: 100rpx;
+height: 70rpx;
 font-family: PingFangSC-Regular;
 font-size: 100rpx;
 color:rgba(0,118,255,1);
@@ -28,6 +28,8 @@ display: flex;
 align-items: center;
 }
 .add_task{
+  width: 130rpx;
+  height: 60rpx;
 font-family: PingFangSC-Regular;
 font-size: 16px;
 color: #1A203B;
@@ -50,7 +52,7 @@ font-size: 16px;
 color: #1A203B;
 letter-spacing: 0.12px;
 margin-left: 30rpx;
-margin-bottom: 20rpx; 
+margin-bottom: 10rpx; 
 }
 .task_time{
 font-family: PingFangSC-Regular;

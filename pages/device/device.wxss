@@ -1,121 +1,70 @@
 /**device.wxss**/
-.weui-navbar {
-    height: 88rpx;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    z-index: 500;
-    top: 0;
-    width: 100%;
-    background: #1A203B;
-    align-items: center;
+page,
+.page,
+.page__bd{
+    height: 100%;
+   
 }
-.weui-navbar__item {
-    width: 374rpx;
-    height: 88rpx;
-    position: relative;
-    display: block;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    flex: 1;
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
     text-align: center;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    opacity: 0.45;
-    font-family: PingFangSC-Regular;
-    font-size: 32rpx;
-    color: #FFFFFF;
-    letter-spacing: 2rpx;
-    flex-direction: column;
-    align-items: center;
-    border-bottom:2rpx solid; 
+    
+}
+.weui-navbar__slider{
+  width: 374rpx;
+  background-color: #005BEA; 
+}
+.weui-navbar__item{
+  background: #1A203B;
+font-family: PingFangSC-Regular;
+font-size: 32rpx;
+color: #A0A0A0;
+letter-spacing: -0.16rpx;
 }
 .weui-navbar__item.weui-bar__item_on {
-    color: #1185E4; 
-    border-bottom-color: #1185E4;
-    opacity: unset;
+color: #005BEA;
+
 }
 
-
-.weui-navbar__item:after {
-    content: " ";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 2rpx;
-    bottom: 0;
-    border-right: 8rpx solid none;
-    color: #CCCCCC;
-    -webkit-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-    -webkit-transform: scaleX(0.5);
-    transform: scaleX(0.5);
-}
-.weui-navbar:after {
-    content: " ";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 1rpx;
-    border-bottom: 1rpx solid #CCCCCC;
-    color: #CCCCCC;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scaleY(0.5);
-    transform: scaleY(0.5);
-}
+/**以下是搜索框样式**/
 .weui-search-bar{
-  width: 690rpx;
-  height: 60rpx;
-  border-radius: 10rpx;
-  text-align: center;
-  display: -webkit-flex;
-  padding: 16rpx 20rpx;
-  display: -webkit-box;
-  display: -webkit-flex;
+width: 100%;
+border: unset;
+background: #F0F0F0;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.weui-tab__content {
+  width: 375px;
+  height: 558px;
+padding-top:10rpx;
+display: flex;
+flex-direction: column;
+text-align:center;
+align-items: center;
+align-content: center;
+background:	#F0F0F0;
+}
+.weui-search-bar__label{
+  background-color:	#E0E0E0;
+}
+/**以下是主体样式**/
+.device_box{
+  width: 100%;
   display: flex;
-  margin-left: 10rpx;
-
-}
-.weui-search-bar__form {
-    position: relative;
-    -webkit-box-flex: 1;
-    -webkit-flex: auto;
-    flex: auto;
-    background-color: #EFEFF4;
-    text-align: center;
-    align-items: center;
-}
-.weui-search-bar__input{
-    position: absolute;
-    padding: 8rpx 0;
-    width: 100%;
-    height: 1.42857143em;
-    border: 0;
-    font-size: 28rpx;
-    line-height: 1.42857143em;
-    box-sizing: content-box;
-    background: transparent;
-}
-  .weui-search-bar__label {
-    top: 2rpx;
-    right: 2rpx;
-    bottom: 2rpx;
-    left: 2rpx;
-    z-index: 2;
-    border-radius: 6rpx;
-    text-align: center;
-    color: #9B9B9B;
-}
-.weui-search-bar__label span{
-  font-family: PingFangSC-Regular;
-  font-size: 28rpx;
-  color: #8E98B4;
-  letter-spacing: 1rpx;
-}
-.weui-icon-search{
-  border-radius: 1px;
-  color: #B2B2B2;
+  flex-direction: column;
+  align-items: center;
 }
 .device-card_box{
   width: 690rpx;
@@ -123,13 +72,15 @@
   background: #FFFFFF;
   box-shadow: 0 4rpx 12rpx 0 rgba(170,183,212,0.80);
   border-radius: 8rpx;
-  margin-left: 30rpx;
-  margin-right:30rpx; 
-  margin-bottom: 30rpx;
-  align-items: center;
+  margin-bottom: 20rpx;
 }
 .deivce-id_item{
+  width: 670rpx;
+  height: 60rpx;
   border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .device-id{
@@ -137,7 +88,7 @@
   font-size: 32rpx;
   color: #1A203B;
   letter-spacing: 1rpx;
-  margin: 20rpx;
+  text-indent: 20rpx;
 }
 .device-size_item{
   width: 100%;
@@ -164,7 +115,7 @@ margin-right:20rpx;
   opacity: 0.19;
   background: rgba(84,141,236,0.50);
   border-radius: 8rpx;
-  margin: 30rpx;
+  margin: 20rpx;
   display: flex;
   text-align: center;
 }

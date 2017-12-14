@@ -21,7 +21,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 11,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -93,6 +93,12 @@
 					"id": -1,
 					"name": "实时数据",
 					"pathName": "pages/real_time_data/real_time_data",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "实时监控",
+					"pathName": "pages/real_time_monitoring/real_time_monitoring",
 					"query": ""
 				}
 			]

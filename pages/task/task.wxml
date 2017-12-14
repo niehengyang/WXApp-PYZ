@@ -1,6 +1,6 @@
 <!--task.wxml-->
 <view class='addtask_item'>
-<label class='addtask_btn'>+</label>
+<image class='addtask_btn' src='/images/device/add.svg'></image>
 <label class='add_task'>添加任务</label>
 </view>
 <view class='name_item'>

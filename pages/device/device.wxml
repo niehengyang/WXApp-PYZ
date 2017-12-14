@@ -1,71 +1,119 @@
- <!--device.wxml-->
-<view class="weui-navbar weui-bar__item_on">
-    <view class="weui-navbar__item weui-bar__item_on">设备</view>
-    <view class="weui-navbar__item">设备组</view>
-</view>
-<view class="weui-search-bar">
-  <form class="weui-search-bar__form">
-      <input type="search" class="weui-search-bar__input" />
-      <label class="weui-search-bar__label">
-        <icon type='search' class="weui-icon-search" size='14' ></icon>
-        <span>Search</span>
-      </label>
-  </form>
-</view>
-<view class='device-card_box'>
-  <view class='deivce-id_item'>
-    <label class='device-id'>设备RE2344677</label>
-  </view>
-  <view class='device-size_item'>
-    <label class='device-del'>地址:北京市海淀区知春路9号</label>
-    <label class='device-style'>灵敏度/编号</label>
-  </view>
-  <view class='device-show_box'>
-    <view class='humidity_item'>
-      <image class='humidity_svg' src='/images/device/humidity.svg'></image>
-      <label class='humidity_size'>78%</label>
-    </view>
-    <view class='temperature_item'>
-      <image class='temperature_svg' src='/images/device/temperature.svg'></image>
-      <label class='temperature_size'>31℃</label>
-    </view>
-  </view>
-</view>
-<view class='device-card_box'>
-  <view class='deivce-id_item'>
-    <label class='device-id'>设备RE2344677</label>
-  </view>
-  <view class='device-size_item'>
-    <label class='device-del'>地址:北京市海淀区知春路9号</label>
-    <label class='device-style'>灵敏度/编号</label>
-  </view>
-  <view class='device-show_box'>
-    <view class='humidity_item'>
-      <image class='humidity_svg' src='/images/device/humidity.svg'></image>
-      <label class='humidity_size'>78%</label>
-    </view>
-    <view class='temperature_item'>
-      <image class='temperature_svg' src='/images/device/temperature.svg'></image>
-      <label class='temperature_size'>31℃</label>
-    </view>
-  </view>
-</view>
-<view class='device-card_box'>
-  <view class='deivce-id_item'>
-    <label class='device-id'>设备RE2344677</label>
-  </view>
-  <view class='device-size_item'>
-    <label class='device-del'>地址:北京市海淀区知春路9号</label>
-    <label class='device-style'>灵敏度/编号</label>
-  </view>
-  <view class='device-show_box'>
-    <view class='humidity_item'>
-      <image class='humidity_svg' src='/images/device/humidity.svg'></image>
-      <label class='humidity_size'>78%</label>
-    </view>
-    <view class='temperature_item'>
-      <image class='temperature_svg' src='/images/device/temperature.svg'></image>
-      <label class='temperature_size'>31℃</label>
+<!--device.wxml-->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+              <view class="weui-search-bar__box">
+                <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                  <icon type="clear" size="14"></icon>
+                </view>
+              </view>
+              <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                <icon class="weui-icon-search" type="search" size="14"></icon>
+                <view class="weui-search-bar__text">搜索</view>
+              </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+          </view>
+          <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+              <view class="weui-cell__bd">
+                <view>实时搜索文本</view>
+              </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+              <view class="weui-cell__bd">
+                <view>实时搜索文本</view>
+              </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+              <view class="weui-cell__bd">
+                <view>实时搜索文本</view>
+              </view>
+            </navigator>
+            <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+              <view class="weui-cell__bd">
+                <view>实时搜索文本</view>
+              </view>
+            </navigator>
+          </view>
+          <view class='device_box'>
+            <view class='device-card_box'>
+              <view class='deivce-id_item'>
+                <label class='device-id'>设备RE2344677</label>
+              </view>
+              <view class='device-size_item'>
+                <label class='device-del'>地址:北京市海淀区知春路9号</label>
+                <label class='device-style'>灵敏度/编号</label>
+              </view>
+              <view class='device-show_box'>
+                <view class='humidity_item'>
+                  <image class='humidity_svg' src='/images/device/humidity.svg'></image>
+                  <label class='humidity_size'>78%</label>
+                </view>
+                <view class='temperature_item'>
+                  <image class='temperature_svg' src='/images/device/temperature.svg'></image>
+                  <label class='temperature_size'>31℃</label>
+                </view>
+              </view>
+            </view>
+            <view class='device-card_box'>
+              <view class='deivce-id_item'>
+                <label class='device-id'>设备RE2344677</label>
+              </view>
+              <view class='device-size_item'>
+                <label class='device-del'>地址:北京市海淀区知春路9号</label>
+                <label class='device-style'>灵敏度/编号</label>
+              </view>
+              <view class='device-show_box'>
+                <view class='humidity_item'>
+                  <image class='humidity_svg' src='/images/device/humidity.svg'></image>
+                  <label class='humidity_size'>78%</label>
+                </view>
+                <view class='temperature_item'>
+                  <image class='temperature_svg' src='/images/device/temperature.svg'></image>
+                  <label class='temperature_size'>31℃</label>
+                </view>
+              </view>
+            </view>
+            <view class='device-card_box'>
+              <view class='deivce-id_item'>
+                <label class='device-id'>设备RE2344677</label>
+              </view>
+              <view class='device-size_item'>
+                <label class='device-del'>地址:北京市海淀区知春路9号</label>
+                <label class='device-style'>灵敏度/编号</label>
+              </view>
+              <view class='device-show_box'>
+                <view class='humidity_item'>
+                  <image class='humidity_svg' src='/images/device/humidity.svg'></image>
+                  <label class='humidity_size'>78%</label>
+                </view>
+                <view class='temperature_item'>
+                  <image class='temperature_svg' src='/images/device/temperature.svg'></image>
+                  <label class='temperature_size'>31℃</label>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          设备组页面内容
+        </view>
+      </view>
     </view>
   </view>
 </view>
