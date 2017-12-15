@@ -10,7 +10,7 @@ Page({
     tabs: ["设备", "设备组"],
     activeIndex: 0,
     sliderOffset: 0,
-    sliderLeft: 0,
+    sliderLeft: 10,
     inputShowed: false,
     inputVal: ""
   },

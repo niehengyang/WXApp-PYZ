@@ -3,12 +3,15 @@
 var app = getApp()
 Page({
   data: {
-    motto: '欢迎登录WXapp',
+    motto: '',
     userInfo: {},
     userName: '',
     userPassword: '',
     id_token: '',
+    focus : false,
     responseData: '',
+    username_img_path: '/images/login/mobile-nor.svg',
+    password_img_path:'/images/login/lock-nor.svg',
     boo: false
   },
   //事件处理函数
@@ -28,7 +31,45 @@ Page({
     })
     console.log(e.detail.value)
   },
-  logIn: function () {
+ //以下是帐号输入框聚焦触发
+  username_focus_on: function () {
+    this.setData({
+      username_img_path: '/images/login/mobile-sel.svg'
+
+    })
+  },
+  username_focus_off: function () {
+    this.setData({
+      username_img_path: '/images/login/mobile-nor.svg'
+
+    })
+  },
+  //以下是密码输入框聚焦触发
+  password_focus_on: function () {
+    this.setData({
+      password_img_path: '/images/login/lock-sel.svg'
+
+    })
+  },
+  password_focus_off : function() {
+    this.setData({
+      password_img_path: '/images/login/lock-nor.svg'
+
+    })
+  },
+  //以下是点击登录触发
+  logIn_free: function () {
+    wx.navigateTo({
+      url: '/pages/home/home',
+      //接口调用成功的回调方法
+      fuccess: function () { },
+      //接口调用失败的回调方法
+      fail: function () { },
+      //接口调用无论成功或者失败的回调方法
+      complete: function () { }
+    })
+  },
+ /** logIn: function () {
     var that = this
     wx.request({
       //url: 'http://localhost:8000/index/ajax_dict',
@@ -61,7 +102,7 @@ Page({
         console.log('is failed')
       }
     })
-  },
+  },**/
   onLoad: function () {
     console.log('onLoad')
     var that = this
@@ -95,7 +136,7 @@ Page({
       boo: !this.data.boo
     });
   },
-
+  
 onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮

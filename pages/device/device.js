@@ -9,7 +9,7 @@ Page({
     tabs: ["设备", "设备组"],
     activeIndex: 0,
     sliderOffset: 0,
-    sliderLeft: 0,
+    sliderLeft: 10,
     inputShowed: false,
     inputVal: ""
   },
@@ -59,7 +59,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function () {
+ /** onLoad: function () {
     var that = this;
     wx.getSystemInfo({
       success: function (res) {
@@ -69,7 +69,7 @@ Page({
         });
       }
     });
-  },
+  },**/
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,

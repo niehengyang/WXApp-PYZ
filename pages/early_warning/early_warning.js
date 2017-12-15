@@ -8,7 +8,7 @@ Page({
     tabs: ["已处理", "待处理"],
     activeIndex: 0,
     sliderOffset: 0,
-    sliderLeft: 0,
+    sliderLeft: 10,
     inputShowed: false,
     inputVal: ""
   },

@@ -46,12 +46,13 @@ opacity:0.8;
   color: rgba(204,0,0,1);
 }
 .button_item{
-  width: 630rpx;
-  height: 260rpx;
+width: 640rpx;
+height: 260rpx;
 display: flex;
-flex-direction: row;
-align-content: space-between;
-align-items: flex-end;
+margin-top:90rpx; 
+align-items: center;
+justify-content: center;
+align-content: center;
 }
 .processed_btn{
 width: 300rpx;

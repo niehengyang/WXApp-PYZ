@@ -11,7 +11,7 @@ page {
 .addtask_item {
   width: 690rpx;
   height: 140rpx;
-  background: #fff;
+  background: #ffffff;
   display: flex;
   border-radius: 4px;
   align-items: center;
@@ -20,23 +20,25 @@ page {
 }
 
 .addtask_btn {
-  width: 70rpx;
-  height: 70rpx;
-  font-family: PingFangSC-Regular;
-  font-size: 100rpx;
+  width: 60rpx;
+  height: 120rpx;
   color: rgba(0, 118, 255, 1);
-  margin: 20rpx;
+  margin-right: 20rpx;
   display: flex;
   align-items: center;
+  align-content: center;
 }
 
 .add_task {
   width: 140rpx;
-  height: 60rpx;
-  font-family: PingFangSC-Regular;
-  font-size: 16px;
+  height: 120rpx;
+  font-size: 32rpx;
   color: #1a203b;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.24rpx;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .name_item {

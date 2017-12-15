@@ -4,7 +4,7 @@ App({
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs.sli(0,40))
+    //wx.setStorageSync('logs', logs.sli(0,40))
   }, getUserInfo: function (cb) {
     var that = this
     if (this.globalData.userInfo) {

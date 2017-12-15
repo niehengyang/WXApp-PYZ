@@ -4,6 +4,7 @@
 <label class='task_name'>任务名称</label>
 <label class='name_size'>名称名称</label>
 </view>
+
 <view class='device_item'>
 <label class='device_name'>设备</label>
 <label class='device_id'>RX2345678</label>

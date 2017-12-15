@@ -1,5 +1,5 @@
 <!--device.wxml-->
-<view class="page">
+<view class="page"> 
   <view class="page__bd">
     <view class="weui-tab">
       <view class="weui-navbar">
@@ -16,7 +16,7 @@
             <view class="weui-search-bar__form">
               <view class="weui-search-bar__box">
                 <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
-                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus ="{{inputShowed}}" bindinput="inputTyping" />
                 <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
                   <icon type="clear" size="14"></icon>
                 </view>
@@ -62,7 +62,7 @@
               <view class='device-show_box'>
                 <view class='humidity_item'>
                   <image class='humidity_svg' src='/images/device/humidity.svg'></image>
-                  <label class='humidity_size'>78%</label>
+                  <label class='humidity_size' style='opacity: 1'>78%</label>
                 </view>
                 <view class='temperature_item'>
                   <image class='temperature_svg' src='/images/device/temperature.svg'></image>
@@ -157,8 +157,8 @@
             </view>
             <view class='device-show_box'>
               <view class='humidity_item'>
-                <image class='humidity_svg' src='/images/device/humidity.svg'></image>
-                <label class='humidity_size'>78%</label>
+                <image class='humidity_svg' src='/images/device/humidity.svg' ></image>
+                <label class='humidity_size' >78%</label>
               </view>
               <view class='temperature_item'>
                 <image class='temperature_svg' src='/images/device/temperature.svg'></image>
