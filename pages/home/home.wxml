@@ -1,4 +1,4 @@
-<!--home.wxml-->
+<!--home.wxml--> 
 <view class='logo-show_box'>  
   <image class='logo-bg_svg' src='/images/home/tu1.svg'>
   </image>
@@ -12,11 +12,12 @@
   <image class='humidity_svg' src='/images/home/humidity.svg'></image>
   <label class='humidity_size'>湿度 81%</label>
 </view>
-
+  <label class='line'></label>
 <view class='temperature_box'>
 <image class='temperature.svg' src='/images/home/temperature.svg'></image>
 <label class='temperature.size'>温度 28℃</label>
 </view>
+  <label class='line'></label>
 <view class='pm_box'>
 <image class='pm.svg' src='/images/home/pm.svg'></image>
 <label class='pm.size'>PM10 200</label>
@@ -24,19 +25,35 @@
 </view>
 <view class='bottom_box'>
 <button class='data_item' bindtap='real_time_data'>
+<view class='restricted_box1'>
 <image class='data_svg' src='/images/home/data.svg'></image>
+</view>
+<view class='restricted_box2'>
 <label class='data_name'>实时数据</label>
+</view>
 </button>
 <button class='monitoring_item' bindtap='real_time_monitoring'>
+<view class='restricted_box1'>
 <image class='monitoring_svg' src='/images/home/monitor.svg'></image>
+</view>
+<view class='restricted_box2'>
 <label class='monitoring_name'>实时监控</label>
+</view>
 </button>
 <button class='alarm_item' bindtap='early_warning'>
+<view class='restricted_box1'>
 <image class='alarm_svg' src='/images/home/alarm.svg'></image>
+</view>
+<view class='restricted_box2'>
 <label class='alarm_name'>预警</label>
+</view>
 </button>
 <button class='task_item' bindtap='task'>
+<view class='restricted_box1'>
 <image class='task_svg' src='/images/home/task.svg'></image>
+</view>
+<view class='restricted_box2'>
 <label class='task_name'>任务</label>
+</view>
 </button>
 </view>

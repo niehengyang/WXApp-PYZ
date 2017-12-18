@@ -16,7 +16,7 @@
 <label class='Level_name'>级别</label>
 <label class='Level_size'>最高级</label>
 </view>
-<view class='failure_item'>
+<view class='failure_item'> 
 <label class='failure_details'>故障详情</label>
 <label class='failure_details_value'>xxxxxxxxxxxxx</label>
 </view>

@@ -1,37 +1,38 @@
 <!--mine.wxml-->
 <view class='heard_box'>
   <image class='heard_bg' src='/images/mine/mine_bg.png'></image>
+  <view class='heard_show_box'>
     <view class='logo_img'>
       <image class='logo_svg' src='/images/mine/mine_logo.svg'></image>
     </view>
-  <view class='username_title'>
-    <text class='username_value'>用户名</text>
+    <view class='username_title'>
+      <text class='username_value'>用户名</text>
+    </view>
   </view>
 </view>
 <view class="weui-cells">
-            <view class="weui-cell weui-cell_access">
-                <view class="weui-cell__bd">
-                    <text>日志</text>
-                </view>
-                <view class="weui-cell__ft">
-
-                </view>
-            </view>
-            <view class="weui-cell weui-cell_access">
-                <view class="weui-cell__bd">
-                    <text>账号与安全</text>
-                </view>
-                <view class="weui-cell__ft">
-                </view>
-            </view>
-             <view class="weui-cell weui-cell_access">
-                <view class="weui-cell__bd">
-                    <text>帮助与反馈</text>
-                </view>
-                <view class="weui-cell__ft">
-                </view>
-            </view>
-        </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <text>日志</text>
+    </view>
+    <view class="weui-cell__ft">
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <text>账号与安全</text>
+    </view>
+    <view class="weui-cell__ft">
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_access">
+    <view class="weui-cell__bd">
+      <text>帮助与反馈</text>
+    </view>
+    <view class="weui-cell__ft">
+    </view>
+  </view>
+</view>
 <view class='weui_exit'>
-    <button class='exit'>退出</button>
+  <button class='exit_btn'>退出</button>
 </view>

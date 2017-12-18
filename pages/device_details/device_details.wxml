@@ -12,20 +12,20 @@
   <view class='device-status_box'>
     <view class='status_left'>
       <view class='attribute_item'>
-      <label class='device_attribute'>灵敏度:</label>
-      <label class='attaribute_size'>xxxxxxxx</label>
+        <label class='device_attribute'>灵敏度:</label>
+        <label class='attaribute_size'>xxxxxxxx</label>
       </view>
       <view class='attribute_item'>
-      <label class='device_attribute'>编号:</label>
-      <label class='attaribute_size'>xxxxxxxx</label>
+        <label class='device_attribute'>编号:</label>
+        <label class='attaribute_size'>xxxxxxxx</label>
       </view>
       <view class='attribute_item'>
-      <label class='device_attribute'>属性3:</label>
-      <label class='attaribute_size'>xxxxxxxx</label>
+        <label class='device_attribute'>属性3:</label>
+        <label class='attaribute_size'>xxxxxxxx</label>
       </view>
       <view class='attribute_item'>
-      <label class='device_attribute'>属性4:</label>
-      <label class='attaribute_size'>xxxxxxxx</label>
+        <label class='device_attribute'>属性4:</label>
+        <label class='attaribute_size'>xxxxxxxx</label>
       </view>
     </view>
     <view class='status_right'>

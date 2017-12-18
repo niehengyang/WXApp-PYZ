@@ -2,6 +2,8 @@
 
 page, .page, .page__bd {
   height: 100%;
+  width: 100%;
+   font-family: PingFangSC-Regular;
 }
 
 .page__bd {
@@ -20,7 +22,7 @@ page, .page, .page__bd {
 
 .weui-navbar__item {
   background: #1a203b;
-  font-family: PingFangSC-Regular;
+  height: 46rpx;
   font-size: 32rpx;
   color: #a0a0a0;
   letter-spacing: -0.16rpx;
@@ -31,6 +33,7 @@ page, .page, .page__bd {
 .weui-navbar__slider {
   width: 332rpx;
   background: linear-gradient(to right, #00c6fb, #005bea);
+  height: 4rpx;
 }
 
 .weui-navbar__item.weui-bar__item_on {
@@ -97,24 +100,21 @@ page, .page, .page__bd {
 }
 
 .devie_name {
-  font-family: PingFangSC-Regular;
   font-size: 16px;
   color: #1a203b;
   letter-spacing: 0.12px;
 }
 
 .device_style {
-  font-family: PingFangSC-Regular;
-  font-size: 16px;
+  font-size: 32rpx;
   color: #1a203b;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.24rpx;
 }
 
 .time_label {
-  font-family: PingFangSC-Regular;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #8e98b4;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.24rpx;
   float: left;
   margin-top: 20rpx;
 }

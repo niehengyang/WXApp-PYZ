@@ -1,6 +1,8 @@
-<!--task.wxml-->
+<!--task.wxml--> 
 <view class='addtask_item' bindtap='add_task'>
+<view class='addtask_btn_item'>
 <image class='addtask_btn' src='/images/device/add.svg'></image>
+</view>
 <label class='add_task'>添加任务</label>
 </view>
 <view class='name_item' bindtap='task_details01'>

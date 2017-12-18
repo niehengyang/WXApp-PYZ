@@ -1,5 +1,5 @@
 <!--real_time_monitoring.wxml-->
-<view class="container">
+<view class="container"> 
   <view class='video_box'>
     <video class='video_item' src="{{src}}" >
     <image class='face_svg' src='/images/poster.jpg'></image>

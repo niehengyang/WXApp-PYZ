@@ -1,6 +1,5 @@
 // pages/early_warning/early_warning.js
 Page({
-
   /**
    * 页面的初始数据
    */

@@ -6,6 +6,7 @@ page {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  font-family: PingFangSC-Regular;
 }
 
 .container {
@@ -46,12 +47,10 @@ page {
 .video_name {
   width: 690rpx;
   height: 72rpx;
-  font-family: PingFangSC-Regular;
   font-size: 32rpx;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: -0.2rpx;
-  opacity: 0.6;
-  background: #000;
+  background: rgba(0,0,0,0.6);
   border-radius: 0 0 8rpx 8rpx;
   display: flex;
   align-items: center;
