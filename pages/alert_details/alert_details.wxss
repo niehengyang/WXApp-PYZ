@@ -1,14 +1,16 @@
 /**alert_details.wxss**/
-page{
-font-family: PingFangSC-Regular;
-  background: #1A203B;
+
+page {
+  font-family: PingFangSC-Regular;
+  background: #1a203b;
   display: flex;
   justify-content: center;
 }
-.alert-details_box{
+
+.alert-details_box {
   width: 690rpx;
   height: 1000rpx;
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 8rpx;
   margin-top: 20rpx;
   display: flex;
@@ -16,54 +18,62 @@ font-family: PingFangSC-Regular;
   flex-wrap: wrap;
   align-content: flex-start;
 }
-.device_item,.exception-state_item,.time_item,.Level_item,.failure_item{
-width: 660rpx;
+
+.device_item, .exception-state_item, .time_item, .Level_item, .failure_item {
+  width: 660rpx;
   height: 140rpx;
-  border-bottom: 1px solid ;
-  border-bottom-color: rgba(233,231,239,0.5);
+  border-bottom: 1px solid;
+  border-bottom-color: rgba(233, 231, 239, 0.5);
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-between;
 }
-.device_name,.exception_state,.alarm_time,.Level_name,.failure_details{
-font-size: 32rpx;
-color: #1A203B;
-letter-spacing: 0.24rpx;
-margin: 20rpx;
+
+.device_name, .exception_state, .alarm_time, .Level_name, .failure_details {
+  font-size: 32rpx;
+  color: #1a203b;
+  letter-spacing: 0.24rpx;
+  margin: 20rpx;
 }
-.device_id,.exception_state_value,.time_size,.failure_details_value{
-font-size: 32rpx;
-color: #8E98B4;
-letter-spacing: 0.24rpx;
-opacity:0.8;
+
+.device_id, .exception_state_value, .time_size, .failure_details_value {
+  font-size: 32rpx;
+  color: #8e98b4;
+  letter-spacing: 0.24rpx;
+  opacity: 0.8;
 }
-.Level_size{
+
+.Level_size {
   font-size: 32rpx;
   letter-spacing: 0.24rpx;
-  color: rgba(204,0,0,1);
+  color: rgba(204, 0, 0, 1);
 }
-.button_item{
-width: 100%;
-display: flex;
-margin-top:160rpx; 
-align-items: center;
-justify-content: center;
-align-content: center;
-align-self: flex-end;
+
+.button_item {
+  width: 100%;
+  display: flex;
+  margin-top: 160rpx;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: flex-end;
 }
-.processed_btn , .false_positives{
-width: 300rpx;
-height: 88rpx;
-border-radius: 8rpx;
-font-size: 38rpx;
-color: #FFFFFF;
-letter-spacing: 0.24rpx;
-margin: 4rpx;
+
+.processed_btn, .false_positives {
+  width: 300rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+  font-size: 38rpx;
+  color: #fff;
+  letter-spacing: 0.24rpx;
+  margin: 4rpx;
 }
-.false_positives{
-background: #CC0000;
+
+.false_positives {
+  background: #c00;
 }
-.processed_btn{
-background: #0076FF;
+
+.processed_btn {
+  background: #0076ff;
 }

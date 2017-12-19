@@ -1,16 +1,15 @@
-
 <!--real_time_data.wxml-->
 <view class='page_bg'>
-<view class='real_time-temperature_box'>
+  <view class='real_time-temperature_box'>
     <label class='real_time-temperature_label'>实时温度（℃）</label>
     <canvas canvas-id="lineCanvas1" class="canvas"></canvas>
-</view>
-<view class='real_time-temperature_box'>
+  </view>
+  <view class='real_time-temperature_box'>
     <label class='real_time-temperature_label'>实时湿度（%）</label>
     <canvas canvas-id="lineCanvas2" class="canvas"></canvas>
-</view>
-<view class='real_time-temperature_box'>
+  </view>
+  <view class='real_time-temperature_box'>
     <label class='real_time-temperature_label'>实时pm2.5（ug/m)</label>
     <canvas canvas-id="lineCanvas3" class="canvas"></canvas>
-</view>
+  </view>
 </view>

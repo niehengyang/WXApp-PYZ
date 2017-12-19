@@ -8,10 +8,10 @@ Page({
     userName: '',
     userPassword: '',
     id_token: '',
-    focus : false,
+    focus: false,
     responseData: '',
     username_img_path: '/images/login/mobile-nor.svg',
-    password_img_path:'/images/login/lock-nor.svg',
+    password_img_path: '/images/login/lock-nor.svg',
     boo: false
   },
   //事件处理函数
@@ -31,7 +31,7 @@ Page({
     })
     console.log(e.detail.value)
   },
- //以下是帐号输入框聚焦触发
+  //以下是帐号输入框聚焦触发
   username_focus_on: function () {
     this.setData({
       username_img_path: '/images/login/mobile-sel.svg'
@@ -51,58 +51,52 @@ Page({
 
     })
   },
-  password_focus_off : function() {
+  password_focus_off: function () {
     this.setData({
       password_img_path: '/images/login/lock-nor.svg'
 
     })
   },
-  //以下是点击登录触发
-  logIn_free: function () {
-    wx.navigateTo({
+  //以下是点击进入试用版
+  home_page: function () {
+    wx.switchTab({
       url: '/pages/home/home',
-      //接口调用成功的回调方法
-      fuccess: function () { },
-      //接口调用失败的回调方法
-      fail: function () { },
-      //接口调用无论成功或者失败的回调方法
-      complete: function () { }
     })
   },
- /** logIn: function () {
-    var that = this
-    wx.request({
-      //url: 'http://localhost:8000/index/ajax_dict',
-      data: {
-      username: this.data.userName,
-      password: this.data.userPassword,
-      },
-      method: 'GET',
-      success: function (res) {
-        that.setData({
-          responseData: res.data.result[0].body
-        });
-        wx.setStorage({
-          key: "responseData",
-          data: that.data.responseData
-        });
-        try {
-          wx.setStorageSync('id_token', res.data.id_token)
-        } catch (e) {
-          console.log('there is no id_token')
-        }
-
-        wx.navigateTo({
-          url: '/pages/home/home'
-        })
-        console.log(res.data);
-      },
-      fail: function (res) {
-        console.log(res.data);
-        console.log('is failed')
-      }
-    })
-  },**/
+  /** logIn: function () {
+     var that = this
+     wx.request({
+       //url: 'http://localhost:8000/index/ajax_dict',
+       data: {
+       username: this.data.userName,
+       password: this.data.userPassword,
+       },
+       method: 'GET',
+       success: function (res) {
+         that.setData({
+           responseData: res.data.result[0].body
+         });
+         wx.setStorage({
+           key: "responseData",
+           data: that.data.responseData
+         });
+         try {
+           wx.setStorageSync('id_token', res.data.id_token)
+         } catch (e) {
+           console.log('there is no id_token')
+         }
+ 
+         wx.navigateTo({
+           url: '/pages/home/home'
+         })
+         console.log(res.data);
+       },
+       fail: function (res) {
+         console.log(res.data);
+         console.log('is failed')
+       }
+     })
+   },**/
   onLoad: function () {
     console.log('onLoad')
     var that = this
@@ -136,8 +130,8 @@ Page({
       boo: !this.data.boo
     });
   },
-  
-onShareAppMessage: function (res) {
+
+  onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
       console.log(res.target)

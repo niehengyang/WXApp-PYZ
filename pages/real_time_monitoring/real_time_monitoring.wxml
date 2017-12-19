@@ -1,18 +1,21 @@
 <!--real_time_monitoring.wxml-->
-<view class="container"> 
+<view class="container">
   <view class='video_box'>
-    <video class='video_item' src="{{src}}" >
-    <image class='face_svg' src='/images/poster.jpg'></image>
-    </video><label class='video_name'>摄像头********</label>
+    <video class='video_item' src="{{src}}">
+      <image class='face_svg' src='/images/poster.jpg'></image>
+    </video>
+    <label class='video_name'>摄像头********</label>
   </view>
   <view class='video_box'>
     <video class='video_item' src="{{src}}">
-    <image class='face_svg' src='/images/poster01.jpg'></image>
-    </video><label class='video_name'>摄像头********</label>
+      <image class='face_svg' src='/images/poster01.jpg'></image>
+    </video>
+    <label class='video_name'>摄像头********</label>
   </view>
   <view class='video_box'>
     <video class='video_item' src="{{src}}">
-    <image class='face_svg' src='/images/poster02.jpg'></image>
-    </video><label class='video_name'>摄像头********</label>
+      <image class='face_svg' src='/images/poster02.jpg'></image>
+    </video>
+    <label class='video_name'>摄像头********</label>
   </view>
 </view>

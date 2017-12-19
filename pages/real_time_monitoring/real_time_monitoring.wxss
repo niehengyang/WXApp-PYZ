@@ -50,7 +50,7 @@ page {
   font-size: 32rpx;
   color: #ffffff;
   letter-spacing: -0.2rpx;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 0 0 8rpx 8rpx;
   display: flex;
   align-items: center;

@@ -5,14 +5,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    tel:'/images/mine/mine_logo.svg',
+  },
+  //以下是头像选择
+  choose_img: function (){
+  wx.chooseImage({
+    count: 1, // 默认9
+    sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+    sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+    success: function (res) {
+      // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+      var tempFilePaths= res.tempFilePaths
+    }
+  })
+  },
+  log_btn:function(){
+    wx.navigateTo({
+      url: '/pages/logs/logs',
+    })
   },
 
+  //以下是退出账户判断
+  exit_login:function(){
+    wx.showModal({    //弹出提示框
+      title: '提示',
+      content: '确定退出账户？',
+      success : function(res){
+        if(res.confirm){
+          wx.redirectTo({   //执行跳转
+          url: '/pages/login/login',
+        })
+      }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
+    
   },
 
   /**

@@ -1,9 +1,11 @@
 /**home.wxss**/
-page{
-  background-color: #1A203B;
+
+page {
+  background-color: #1a203b;
   font-family: PingFangSC-Semibold;
 }
-.logo-show_box{
+
+.logo-show_box {
   width: 100%;
   height: 560rpx;
   display: flex;
@@ -11,13 +13,15 @@ page{
   align-items: center;
   align-content: center;
 }
-.logo-bg_svg{
+
+.logo-bg_svg {
   width: 100%;
   height: 480rpx;
   justify-content: center;
   display: flex;
 }
-.PM-size-show_box{
+
+.PM-size-show_box {
   width: 100%;
   height: 200rpx;
   position: absolute;
@@ -25,24 +29,27 @@ page{
   align-items: center;
   justify-content: center;
 }
-.size_label{
+
+.size_label {
   width: 100%;
-font-size: 96rpx;
-color: #FFFFFF;
-letter-spacing: 0.24rpx;
-display: flex;
-justify-content: center;
-align-items: center;
+  font-size: 96rpx;
+  color: #fff;
+  letter-spacing: 0.24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.PM_label{
+
+.PM_label {
   width: 100%;
-font-size: 28rpx;
-color: #FFFFFF;
-letter-spacing: 0.24rpx;
-display: flex;
-justify-content: center;
+  font-size: 28rpx;
+  color: #fff;
+  letter-spacing: 0.24rpx;
+  display: flex;
+  justify-content: center;
 }
-.between_box{
+
+.between_box {
   width: 100%;
   height: 190rpx;
   display: flex;
@@ -51,39 +58,45 @@ justify-content: center;
   align-items: center;
   align-content: center;
 }
-.humidity_box,.temperature_box{
- width: 33.3%;
- height: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
-}
-.line{
-  height: 120rpx;
-  border: 1px solid rgba(233,231,239,0.13);
-}
-.pm_box{
+
+.humidity_box, .temperature_box {
   width: 33.3%;
- height: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.humidity_svg,.temperature.svg,.pm.svg{
+
+.line {
+  height: 120rpx;
+  border: 2rpx solid rgba(233, 231, 239, 0.13);
+}
+
+.pm_box {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.humidity_svg, .temperature.svg, .pm.svg {
   width: 100%;
   height: 64rpx;
   margin-bottom: 20rpx;
 }
- .pm.size, .temperature.size, .humidity_size{
+
+.pm.size, .temperature.size, .humidity_size {
   width: 100%;
-font-size: 32rpx;
-color: #A4AAB3;
-letter-spacing: 0.24rpx;
-text-align: center;
+  font-size: 32rpx;
+  color: #a4aab3;
+  letter-spacing: 0.24rpx;
+  text-align: center;
 }
-.bottom_box{
+
+.bottom_box {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -91,18 +104,20 @@ text-align: center;
   align-content: center;
   flex-wrap: wrap;
 }
-.data_item,.monitoring_item,.alarm_item,.task_item{
-width: 330rpx;
-height: 140rpx;
-background: #2E3450;
-border-radius: 4px;
-margin: 5rpx;
-display: flex;
-align-items: center;
-justify-content: center;
-align-content: space-between;
+
+.data_item, .monitoring_item, .alarm_item, .task_item {
+  width: 330rpx;
+  height: 140rpx;
+  background: #2e3450;
+  border-radius: 8rpx;
+  margin: 5rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-between;
 }
-.restricted_box1{
+
+.restricted_box1 {
   height: 100%;
   width: 30%;
   display: flex;
@@ -110,26 +125,27 @@ align-content: space-between;
   align-content: center;
   justify-content: center;
 }
-.data_svg,.monitoring_svg,.alarm_svg,.task_svg{
+
+.data_svg, .monitoring_svg, .alarm_svg, .task_svg {
   width: 70rpx;
   height: 100%;
 }
-.restricted_box2{
-   height: 100%;
+
+.restricted_box2 {
+  height: 100%;
   width: 70%;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
 }
-.data_name,.monitoring_name,.alarm_name,.task_name{
+
+.data_name, .monitoring_name, .alarm_name, .task_name {
   height: 100%;
-font-size: 32rpx;
-color: #FFFFFF;
-letter-spacing: 0.24rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+  letter-spacing: 0.24rpx;
   display: flex;
   align-items: center;
   align-content: center;
 }
-
-

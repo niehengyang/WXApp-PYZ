@@ -6,6 +6,7 @@ page {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  font-family: PingFangSC-Light;
 }
 
 .real_time-temperature_box {
@@ -13,14 +14,13 @@ page {
   height: 400rpx;
   border-radius: 8rpx;
   margin-top: 20rpx;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .real_time-temperature_label {
   width: 222rpx;
   height: 44rpx;
-  font-family: PingFangSC-Light;
-  font-size: 16px;
+  font-size: 32rpx;
   color: #8e98b4;
   margin-left: 20rpx;
 }

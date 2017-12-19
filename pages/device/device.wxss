@@ -191,7 +191,7 @@ page, .page, .page__bd {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 4rpx 12rpx 0 rgba(170, 183, 212, 0.80);
   margin-bottom: 20rpx;
   border-radius: 8rpx;

@@ -59,7 +59,7 @@ page, .page, .page__bd {
 .already-processed_box {
   width: 690rpx;
   height: 1062rpx;
-  background: #fff;
+  background: #ffffff;
   border-radius: 8rpx;
   display: flex;
   flex-direction: column;
@@ -100,9 +100,9 @@ page, .page, .page__bd {
 }
 
 .devie_name {
-  font-size: 16px;
+  font-size: 32rpx;
   color: #1a203b;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.24rpx;
 }
 
 .device_style {

@@ -24,7 +24,7 @@ page {
 .group-name {
   width: 660rpx;
   height: 80rpx;
-  border-bottom: 1px solid rgba(35, 66, 103, 0.39);
+  border-bottom: 2rpx solid rgba(35, 66, 103, 0.39);
   display: flex;
   align-items: center;
   text-indent: 10rpx;
@@ -35,7 +35,7 @@ page {
   height: 44rpx;
   font-size: 32rpx;
   color: #1a203b;
-  letter-spacing: -0.08px;
+  letter-spacing: -0.16rpx;
 }
 
 .tel_item {
@@ -62,8 +62,8 @@ page {
   height: 240rpx;
   background: #fff;
   margin-bottom: 30rpx;
-  box-shadow: 0 2px 6px 0 rgba(170, 183, 212, 0.80);
-  border-radius: 4px;
+  box-shadow: 0 4rpx 12rpx 0 rgba(170, 183, 212, 0.80);
+  border-radius: 8rpx;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -74,7 +74,7 @@ page {
 .status_left {
   width: 400rpx;
   height: 196rpx;
-  border-right: 1px solid #e9e7ef;
+  border-right: 2rpx solid #e9e7ef;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -150,8 +150,8 @@ page {
   width: 690rpx;
   height: 480rpx;
   background: #fff;
-  box-shadow: 0 2px 6px 0 rgba(170, 183, 212, 0.80);
-  border-radius: 4px;
+  box-shadow: 0 4rpx 12rpx 0 rgba(170, 183, 212, 0.80);
+  border-radius: 8rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -189,9 +189,9 @@ page {
 .humidity_size, .temperature_size, .wind_size, .shape_size {
   width: 65%;
   height: 100%;
-  font-size: 36px;
+  font-size: 72rpx;
   color: #8e98b4;
-  letter-spacing: -0.08px;
+  letter-spacing: -0.16rpx;
   display: flex;
   align-items: center;
 }

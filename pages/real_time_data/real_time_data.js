@@ -41,10 +41,10 @@ Page({
     new wxCharts({
       canvasId: 'lineCanvas1',
       type: 'line',
-      categories: ['12PM','','','13PM','' , '', '14PM','' , '','15PM','' ,'' ,'16PM'],
+      categories: ['12PM', '', '', '13PM', '', '', '14PM', '', '', '15PM', '', '', '16PM'],
       series: [{
         name: '实时温度',
-        data: [6,13, 15, 16, 17, 15, 14,19, 20, 24, 26, 25, 15],
+        data: [6, 13, 15, 16, 17, 15, 14, 19, 20, 24, 26, 25, 15],
         format: function (val) {
           return val.toFixed(0) + '℃';
         }
@@ -129,7 +129,7 @@ Page({
       })
     }
   },
-  
+
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮

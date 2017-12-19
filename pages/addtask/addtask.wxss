@@ -4,13 +4,14 @@ page {
   background: #1a203b;
   display: flex;
   justify-content: center;
+  font-family: PingFangSC-Regular;
 }
 
 .addtask_box {
   width: 690rpx;
   height: 1000rpx;
-  background: #fff;
-  border-radius: 4px;
+  background: #ffffff;
+  border-radius: 8rpx;
   margin-top: 20rpx;
   display: flex;
   justify-content: center;
@@ -21,7 +22,7 @@ page {
 .name_item, .device_item, .threshold-value_item {
   width: 660rpx;
   height: 100rpx;
-  border-bottom: 1px solid;
+  border-bottom: 2rpx solid;
   border-bottom-color: rgba(233, 231, 239, 1);
   display: flex;
   align-items: center;
@@ -30,12 +31,12 @@ page {
 
 .task_name, .device_name, .threshold-value_name {
   width: 70rpx;
-  height: 50rpx;
-  font-family: PingFangSC-Regular;
+  height: 100%;
   font-size: 32rpx;
   color: #1a203b;
   letter-spacing: 0.24rpx;
-  margin: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
   display: flex;
   align-items: center;
   align-content: center;
@@ -43,8 +44,7 @@ page {
 
 .name_input, .device_input, .threshold-value_input {
   width: 550rpx;
-  height: 70rpx;
-  font-family: PingFangSC-Regular;
+  height: 100%;
   font-size: 30rpx;
   letter-spacing: 0.2rpx;
   display: flex;
@@ -58,7 +58,7 @@ page {
   background: #0076ff;
   border-radius: 8rpx;
   font-size: 36rpx;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 0.24rpx;
   text-align: center;
   margin-top : 580rpx;

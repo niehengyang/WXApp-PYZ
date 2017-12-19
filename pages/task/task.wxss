@@ -6,12 +6,13 @@ page {
   align-items: center;
   align-content: center;
   flex-direction: column;
+  font-family: PingFangSC-Regular;
 }
 
 .addtask_item {
   width: 690rpx;
   height: 140rpx;
-  background: #ffffff;
+  background: #fff;
   display: flex;
   border-radius: 8rpx;
   align-items: center;
@@ -27,8 +28,8 @@ page {
 }
 
 .add_task {
- width: 140rpx;
- height: 120rpx;
+  width: 180rpx;
+  height: 120rpx;
   color: #1a203b;
   font-size: 32rpx;
   letter-spacing: 0.24rpx;
@@ -37,14 +38,15 @@ page {
   align-content: center;
   justify-content: center;
 }
-.addtask_btn_item{
+
+.addtask_btn_item {
   width: 60rpx;
   height: 100%;
   padding-top: 5rpx;
-    display: flex;
+  display: flex;
   align-items: center;
   align-content: center;
-  margin-right:20rpx; 
+  margin-left: 30rpx;
 }
 
 .name_item {
@@ -60,18 +62,16 @@ page {
 }
 
 .task_name {
-  font-family: PingFangSC-Regular;
-  font-size: 16px;
+  font-size: 32rpx;
   color: #1a203b;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.24rpx;
   margin-left: 30rpx;
   margin-bottom: 10rpx;
 }
 
 .task_time {
-  font-family: PingFangSC-Regular;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #8e98b4;
-  letter-spacing: 0.12px;
+  letter-spacing: 0.24rpx;
   margin-left: 30rpx;
 }

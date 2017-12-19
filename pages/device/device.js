@@ -11,6 +11,7 @@ Page({
     sliderOffset: 0,
     sliderLeft: 10,
     inputShowed: false,
+    sliderWidth:'',
     inputVal: ""
   },
   showInput: function () {
@@ -59,7 +60,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
- /** onLoad: function () {
+  onLoad: function () {
+    /**
     var that = this;
     wx.getSystemInfo({
       success: function (res) {
@@ -68,8 +70,9 @@ Page({
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
         });
       }
-    });
-  },**/
+    });**/
+  },
+  
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,

@@ -9,7 +9,6 @@
     "pages/alert_details/alert_details",
     "pages/task/task",
     "pages/early_warning/early_warning",
-    "pages/device_group/device_group",
     "pages/real_time_data/real_time_data",
     "pages/real_time_monitoring/real_time_monitoring",
     "pages/details_equipment_group/details_equipment_group",

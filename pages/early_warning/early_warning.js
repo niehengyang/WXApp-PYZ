@@ -47,6 +47,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
+    //以下是导航切换
+    /** 
     var that = this;
     wx.getSystemInfo({
       success: function (res) {
@@ -55,13 +57,14 @@ Page({
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
         });
       }
-    });
+    });**/
   },
   tabClick: function (e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
+    //..................................
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -108,7 +111,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  
+
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
       // 来自页面内转发按钮
