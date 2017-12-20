@@ -12,6 +12,12 @@ Page({
     // tab切换  
     currentTab: 0,
   },
+    /** 
+     * 页面下拉刷新 
+     */
+  onPullDownRefresh: function () {  
+    wx.stopPullDownRefresh()
+  },
   onLoad: function () {
     var that = this;
 

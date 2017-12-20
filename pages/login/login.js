@@ -3,10 +3,9 @@
 var app = getApp()
 Page({
   data: {
-    motto: '',
     userInfo: {},
-    userName: '',
-    userPassword: '',
+    userN: '',
+    passW: '',
     id_token: '',
     focus: false,
     responseData: '',
@@ -51,54 +50,99 @@ Page({
 
     })
   },
+
   password_focus_off: function () {
     this.setData({
       password_img_path: '/images/login/lock-nor.svg'
 
     })
   },
-  //以下是点击进入试用版
+  //以下是进入试用
   home_page: function () {
     wx.switchTab({
       url: '/pages/home/home',
     })
   },
-  /** logIn: function () {
-     var that = this
-     wx.request({
-       //url: 'http://localhost:8000/index/ajax_dict',
-       data: {
-       username: this.data.userName,
-       password: this.data.userPassword,
-       },
-       method: 'GET',
-       success: function (res) {
-         that.setData({
-           responseData: res.data.result[0].body
-         });
-         wx.setStorage({
-           key: "responseData",
-           data: that.data.responseData
-         });
-         try {
-           wx.setStorageSync('id_token', res.data.id_token)
-         } catch (e) {
-           console.log('there is no id_token')
-         }
- 
-         wx.navigateTo({
-           url: '/pages/home/home'
-         })
-         console.log(res.data);
-       },
-       fail: function (res) {
-         console.log(res.data);
-         console.log('is failed')
-       }
-     })
-   },**/
-  onLoad: function () {
-    console.log('onLoad')
+  onLoad: function (options) {
+    // 页面初始化 options为页面跳转所带来的参数
+    var token = wx.getStorageSync('token')
+    var name = wx.getStorageSync('name')
+    var pwd = wx.getStorageSync('pwd')
+    if (token == '') {
+      wx.navigateTo({
+        url: '/pages/home/home'
+      })
+    }
+    if (name != '') {
+      if (pwd != '') {
+        wx.showModal({
+          title: '用户名+密码',
+          content: 'name=' + name + ' pwd=' + pwd + ''//session中用户名和密码不为空触发
+        })
+      }
+    }
+  },
+  //用户名和密码输入框事件
+  userNameInput: function (e) {
+    this.setData({
+      userN: e.detail.value
+    })
+  },
+  passWordInput: function (e) {
+    this.setData({
+      passW: e.detail.value
+    })
+  },
+  //登录按钮点击事件，调用参数要用：this.data.参数；
+  //设置参数值，要使用this.setData({}）方法
+  loginBtnClick: function (a) {
+    var that = this
+    if (this.data.userN.length == 0 || this.data.passW.length == 0) {
+      wx.showModal({
+        title: '温馨提示：',
+        content:'用户名或密码不能为空！',
+        showCancel:false
+      })
+    } else {
+      wx.request({
+        url: '开发者服务器接口地址',
+        data: {                                        //将登录信息发送到服务器
+          username: this.data.userN,
+          password: this.data.passW,
+          unique_id: '123456'          
+        },
+        header: {
+          'content-type': 'application/json'
+        },
+        success : function(res) {
+          // console.log(res.data)
+          if (res.data.status == -1) {
+            userName: '缺少参数'
+          } else {
+            //保存用户session
+            // wx.setStorageSync('token', res.data.result.token)
+            // wx.setStorageSync('user_id', res.data.result.user_id)
+            // wx.setStorageSync('name', that.data.userN)
+            // wx.setStorageSync('pwd', that.data.passW)
+            //将登录信息加入缓存
+            wx.setStorage({
+              key: 'name',
+              data: res.data.result.mobile,
+            })
+            wx.setStorage({
+              key: 'token',
+              data: res.data.result.token,
+            })
+            wx.setStorage({
+              key: 'pwd',
+              data: that.data.passW,
+            })
+          }
+        }
+      })
+    }
+  },
+  /**  console.log('onLoad')
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function (userInfo) {
@@ -128,8 +172,7 @@ Page({
   boo: function () {
     this.setData({
       boo: !this.data.boo
-    });
-  },
+    });**/
 
   onShareAppMessage: function (res) {
     if (res.from === 'button') {

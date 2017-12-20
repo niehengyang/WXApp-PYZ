@@ -179,15 +179,17 @@ page {
 }
 
 .humidity_svg, .temperature_svg, .wind_svg, .shape_svg {
-  width: 75rpx;
+  width: 30%;
   height: 100%;
   margin: 10rpx;
   display: flex;
   align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .humidity_size, .temperature_size, .wind_size, .shape_size {
-  width: 65%;
+  width: 70%;
   height: 100%;
   font-size: 72rpx;
   color: #8e98b4;

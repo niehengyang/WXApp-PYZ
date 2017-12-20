@@ -2,6 +2,7 @@
   "pages":[
     "pages/login/login",
     "pages/home/home",
+    "pages/alarm/alarm",
     "pages/mine/mine",
     "pages/device/device",
     "pages/addtask/addtask",
@@ -31,6 +32,12 @@
       "iconPath": "/images/tabBar/home.png",
       "pagePath": "pages/home/home",
       "text": "首页"
+      },
+      {
+        "selectedIconPath": "/images/tabBar/alarm_sel.png",
+        "iconPath": "/images/tabBar/alarm.png",
+        "pagePath": "pages/alarm/alarm",
+        "text": "告警"
       },
       {
         "selectedIconPath": "/images/tabBar/device_sel.png",

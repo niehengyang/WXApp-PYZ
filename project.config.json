@@ -21,7 +21,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 13,
 			"list": [
 				{
 					"id": -1,
@@ -99,6 +99,12 @@
 					"id": -1,
 					"name": "实时监控",
 					"pathName": "pages/real_time_monitoring/real_time_monitoring",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "告警",
+					"pathName": "pages/alarm/alarm",
 					"query": ""
 				}
 			]
