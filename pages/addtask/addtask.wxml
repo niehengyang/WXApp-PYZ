@@ -1,16 +1,19 @@
 <!--addtask.wxml-->
-<view class='addtask_box'>
+<form class='addtask_box' bindsubmit="formSubmit">
 <view class='name_item'>
 <label class='task_name'>名称</label>
-<input class='name_input' type='text' placeholder='输入任务名称' placeholder-style='opacity: 0.5'></input>
+<input class='name_input' type='text' name='name_input'  placeholder='输入任务名称' 
+placeholder-style='opacity: 0.5' ></input>
 </view>
 <view class='device_item'>
 <label class='device_name'>设备</label>
-<input class='device_input' type='text' placeholder='输入设备编号' placeholder-style='opacity: 0.5'></input>
+<input class='device_input' type='text' name="deviceid_input" placeholder='输入设备编号' placeholder-style='opacity: 0.5' 
+></input>
 </view>
 <view class='threshold-value_item'>
 <label class='threshold-value_name'>阈值</label>
-<input class='threshold-value_input' type='text' placeholder='输入阈值' placeholder-style='opacity: 0.5'></input>
+<input class='threshold-value_input' type='text' name="threshold_input" placeholder='输入阈值' placeholder-style='opacity: 0.5'
+></input>
 </view>
-<button class='submit_btn'>提交</button>
-</view>
+<button form-type='submit' class='submit_btn'  >提交</button>
+</form>

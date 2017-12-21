@@ -10,7 +10,6 @@ page, .page, .page__bd {
   padding-bottom: 0;
   background: #1a203b;
 }
-
 .warning_rules_item {
   width: 100%;
   display: flex;
