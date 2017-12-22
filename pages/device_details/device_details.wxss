@@ -109,7 +109,7 @@ page {
   letter-spacing: -0.16rpx;
 }
 
-.attaribute_size {
+.attaribute_size, .sensitivity_size, .numbering_size{
   text-align: center;
   width: 200rpx;
   height: 44rpx;

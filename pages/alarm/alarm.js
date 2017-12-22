@@ -1,13 +1,17 @@
 // pages/alarm/alarm.js
+
 Page({
   /**
    * 页面的初始数据
-   */
+   */ 
   data: {
     tabs: ["已处理", "未处理"],
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 10,
+    array: [{ time_value: "2017/12/22", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time:"2017-07-10 12：30"},
+      { time_value: "2017/12/22", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time: "2017-07-10 12：30" }, 
+      { time_value: "2017/12/22", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time: "2017-07-10 12：30" }],
     inputShowed: false,
     inputVal: ""
   },
@@ -32,6 +36,11 @@ Page({
       inputVal: e.detail.value
     });
   },
+  alarm_rule_page:function(){
+wx.navigateTo({
+  url: '/pages/alarm_rules/alarm_rules',
+})
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -53,13 +62,35 @@ Page({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
-    //..................................
+    
   },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    //以下是获取系统时间
+    var timestamp = Date.parse(new Date());
+    timestamp = timestamp / 1000;
+    //console.log("当前时间戳为：" + timestamp);
+    var n = timestamp * 1000;
+    var date = new Date(n);
+    //年  
+    var Y = date.getFullYear();
+    //月  
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    //日  
+    var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    //时  
+    var h = date.getHours();
+    //分  
+    var m = date.getMinutes();
+    //秒  
+    var s = date.getSeconds();
+    console.log("当前时间：" + Y + M + D + h + ":" + m + ":" + s);
+    console.log(date.toLocaleDateString());
+    var time = date.toLocaleDateString();
+    this.setData({ time_value: time })
   },
 
   /**

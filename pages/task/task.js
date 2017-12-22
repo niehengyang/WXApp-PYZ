@@ -4,17 +4,19 @@ Page({
   /**
    * 页面的初始数据
    */
+  /****/
+  //模拟从服务器获取数据
   data: {
-    numberArray:[],
-    task_name:'任务名称',
-    add_time:'2017-07-10  12：30',
+    array: [{ name_input: "名称名称", deviceid_input: "RX2345676", threshold_input: "xxxxxxxxxxxxx", add_time: '2017-07-10  12：30', num: 12},
+      { name_input: "名称名称", deviceid_input: "RX2345676", threshold_input: "xxxxxxxxxxxxx", add_time: '2017-07-10  12：30', num: 12},
+      { name_input: "名称名称", deviceid_input: "RX2345676", threshold_input: "xxxxxxxxxxxxx", add_time: '2017-07-10  12：30', num: 12}],
   },
   add_task_page: function (e) {
     wx.navigateTo({
       url: '/pages/addtask/addtask'
     })
     },
-  task_details01: function () {
+  task_details: function () {
     wx.navigateTo({
       url: '/pages/task_details/task_details',
       //接口调用成功的回调方法
@@ -28,9 +30,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    console.log("接收到的是str=" + options);  //模拟从服务器获取数据   
-
+  onLoad: function (options ) {
+    console.log("接收到的是str=" + options ) //模拟从服务器获取数据 
   },
 
   /**

@@ -1,0 +1,119 @@
+/**alarm_rules.wxss**/
+
+page {
+  background: #1a203b;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  font-family: PingFangSC-Regular;
+}
+
+.addtask_item {
+  width: 690rpx;
+  height: 140rpx;
+  background: #fff;
+  display: flex;
+  border-radius: 8rpx;
+  align-items: center;
+  align-content: center;
+  margin-top: 20rpx;
+}
+
+.addtask_btn {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+
+.add_task {
+  width: 180rpx;
+  height: 100%;
+  color: #1a203b;
+  font-size: 32rpx;
+  letter-spacing: 0.24rpx;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.addtask_btn_item {
+  width: 60rpx;
+  height: 100%;
+  padding-top: 5rpx;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: 30rpx;
+}
+
+.alarm_crad_box {
+  width: 690rpx;
+  height: 220rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+
+.hd_item {
+  width: 650rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.temperature_alarm {
+  font-size: 32rpx;
+  color: #1a203b;
+  letter-spacing: 0.24px;
+  text-indent: 10rpx;
+}
+
+.alarm_time {
+  font-size: 24rpx;
+  color: #8e98b4;
+  letter-spacing: 0.24rpx;
+}
+
+.mid_item {
+  width: 650rpx;
+  height: 88rpx;
+  background: rgba(84, 141, 236, 0.19);
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.alarm_rule {
+  font-size: 32rpx;
+  color: #c00;
+  letter-spacing: 0.24rpx;
+  text-indent: 10rpx;
+}
+
+.ft_item {
+  width: 650rpx;
+  height: 60rpx;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.inform_way {
+  font-size: 32rpx;
+  color: #1a203b;
+  letter-spacing: 0.24rpx;
+}

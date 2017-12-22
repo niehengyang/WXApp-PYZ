@@ -8,6 +8,10 @@ Page({
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 10,
+    //模拟从服务器获取数据
+    array: [{ device_name: "设备名称888888", exception_state: "温度过高", alarm_time: "2017-09-10 12:23", Level: "最高级", failure_details: "xxxxxxxxxxxxx" },
+    { device_name: "设备名称888888", exception_state: "掉线", alarm_time: "2017-09-10 12:23", Level: "最高级", failure_details: "xxxxxxxxxxxxx" },
+    { device_name: "设备名称888888", exception_state: "异常状态", alarm_time: "2017-09-10 12:23", Level: "最高级", failure_details: "xxxxxxxxxxxxx" }],
     inputShowed: false,
     inputVal: ""
   },

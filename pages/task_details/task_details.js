@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    array: [{ name_input: "名称名称", deviceid_input: "RX2345676", threshold_input: "xxxxxxxxxxxxx", add_time: '2017-07-10  12：30', num: 12 }],
   },
 
   /**

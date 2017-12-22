@@ -1,4 +1,4 @@
-// pages/alert_details/alert_details.js
+// pages/alarm_rules/alarm_rules.js
 Page({
 
   /**
@@ -6,12 +6,18 @@ Page({
    */
   data: {
     //模拟从服务器获取数据
-    array: [{ device_name: "xerseef33455", exception_state: "温度过高", alarm_time: "2017-09-10 12:23", Level: "最高级", failure_details: "xxxxxxxxxxxxx" }]
+    array: [{ alarm_style: "高温警报", alarm_time: "2017-07-10  12：30", alarm_rule: "温度大于20℃", inform_way: "APP通知" }, 
+    { alarm_style: "高温警报", alarm_time: "2017-07-10  12：30", alarm_rule: "温度大于20℃", inform_way: "APP通知" }],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  add_alarm_page:function(){
+    wx.navigateTo({
+      url: '/pages/add_alarm/add_alarm',
+    })
+  },
   onLoad: function (options) {
   
   },
@@ -61,21 +67,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
+  onShareAppMessage: function () {
   
-  onShareAppMessage: function (res) {
-    if (res.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(res.target)
-    }
-    return {
-      title: '自定义转发标题',
-      path: '/page/user?id=123',
-      success: function (res) {
-        // 转发成功
-      },
-      fail: function (res) {
-        // 转发失败
-      }
-    }
   }
 })

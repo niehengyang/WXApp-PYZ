@@ -1,0 +1,19 @@
+<!--alarm_rules.wxml-->
+<view class='addtask_item' bindtap='add_alarm_page'>
+  <view class='addtask_btn_item'>
+    <image class='addtask_btn' src='/images/device/add.svg'></image>
+  </view>
+  <label class='add_task' >添加规则</label>
+</view> 
+<view class='alarm_crad_box' wx:for="{{array}}" wx:for-item="item">
+<view class='hd_item'>
+<label class='temperature_alarm'>{{item.alarm_style}}</label>
+<label class='alarm_time'>{{item.alarm_time}}</label>
+</view>
+<view class='mid_item'>
+<label class='alarm_rule'>{{item.alarm_rule}}</label>
+</view>
+<view class='ft_item'>
+<label class='inform_way'>{{item.inform_way}}</label>
+</view>
+</view>

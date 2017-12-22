@@ -1,10 +1,10 @@
 <!--alarm.wxml-->
 <view class="page">
   <view class="page__bd">
-    <view class='warning_rules_item'>
-      <button class='warning_rules_btn'>管理预警规则</button>
-    </view>
     <view class="weui-tab">
+      <view class='warning_rules_item' bindtap='alarm_rule_page'>
+        <button class='warning_rules_btn'>管理预警规则</button>
+      </view>
       <view class="weui-navbar">
         <block wx:for="{{tabs}}" wx:key="*this">
           <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
@@ -13,65 +13,34 @@
         </block>
         <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
       </view>
-      <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-        <view class="weui-tab__panel">
-          <view class='already-processed_box' bindtap='Pending'>
-            <label class='date_label'>今日</label>
+    </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+      <view class="weui-tab__panel">
+        <view class='already-processed_box' bindtap='Pending'>
+          <label class='date_label' >{{time_value}}</label>
+          <block wx:if="{{item.time_value==time_value}}" wx:for="{{array}}" wx:for-item="item">
             <view class='processed_item' bindtap=''>
               <label class='red_icon'></label>
               <view class='device_item'>
                 <view class='device_label'>
-                  <label class='devie_name'>任务名称888888</label>
-                  <label class='device_style'>告警213次</label>
+                  <label class='devie_name'>{{item.task_name}}</label>
+                  <label class='device_style'>告警{{item.alarm_size}}次</label>
                 </view>
-                <text class='alarm_reason'>实时温度23℃，超出13℃-17℃</text>
-                <label class='time_label'>2017-07-10 12：30</label>
+                <text class='alarm_reason'>{{item.alarm_reason}}</text>
+                <label class='time_label'>{{item.task_time}}</label>
               </view>
             </view>
-            <view class='processed_item'>
-              <label class='red_icon'></label>
-              <view class='device_item'>
-                <view class='device_label'>
-                  <label class='devie_name'>任务名称888888</label>
-                  <label class='device_style'>告警23次</label>
-                </view>
-                <text class='alarm_reason'>实时温度23℃，超出13℃-17℃</text>
-                <label class='time_label'>2017-07-10 12：30</label>
-              </view>
-            </view>
-            <view class='processed_item'>
-              <label class='red_icon'></label>
-              <view class='device_item'>
-                <view class='device_label'>
-                  <label class='devie_name'>任务名称888888</label>
-                  <label class='device_style'>告警123次</label>
-                </view>
-                <text class='alarm_reason'>实时温度23℃，超出13℃-17℃</text>
-                <label class='time_label'>2017-07-10 12：30</label>
-              </view>
-            </view>
-            <label class='date_label'>2017-11-12</label>
-            <view class='processed_item' bindtap=''>
-              <label class='red_icon'></label>
-              <view class='device_item'>
-                <view class='device_label'>
-                  <label class='devie_name'>任务名称888888</label>
-                  <label class='device_style'>告警213次</label>
-                </view>
-                <text class='alarm_reason'>实时温度23℃，超出13℃-17℃</text>
-                <label class='time_label'>2017-07-10 12：30</label>
-              </view>
-            </view>
-          </view>
-        </view>
-      </view>
-      <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
-        <view class="weui-tab__panel">
-          <view class='already-processed_box' bindtap=''>
-            待处理界面内容
-          </view>
+          </block>
         </view>
       </view>
     </view>
+    <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+      <view class="weui-tab__panel">
+        <view class='already-processed_box' bindtap=''>
+          待处理界面内容
+        </view>
+      </view>
+    </view>
+
   </view>
 </view>

@@ -80,7 +80,7 @@ page, .page, .page__bd {
 
 /**以下是主体样式**/
 
-.device_box {
+.device_box, .device_group_box {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -208,7 +208,6 @@ page, .page, .page__bd {
 }
 
 .team_name {
-  width: 120rpx;
   height: 60rpx;
   font-size: 32rpx;
   color: #1a203b;

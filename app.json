@@ -14,6 +14,8 @@
     "pages/real_time_monitoring/real_time_monitoring",
     "pages/details_equipment_group/details_equipment_group",
     "pages/device_details/device_details",
+    "pages/alarm_rules/alarm_rules",
+    "pages/set_alarm_rules/set_alarm_rules",
     "pages/logs/logs"
   ],
   "window": {

@@ -1,0 +1,19 @@
+<!--set_alarm_rules.wxml-->
+<view class='page'>
+<view class='alarm_name_item'>
+<label class='alarm_name_label'>告警名称</label>
+<label class='alarm_name'>{{item.alarm_name}}</label>
+</view>
+<view class='alarm_condition_item'>
+
+</view>
+<view class='add_alarmcondition_item'>
+
+</view>
+<view class='inform_way_item'>
+
+</view>
+<view class='btn_item'>
+
+</view>
+</view>

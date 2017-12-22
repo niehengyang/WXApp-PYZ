@@ -1,24 +1,24 @@
 <!--task_details.wxml-->
-<view class='task-details_box'>
-  <view class='name_item'>
+<view class='task-details_box' wx:for="{{array}}"  wx:for-item="itemName">
+  <view class='name_item' >
     <label class='task_name'>任务名称</label>
-    <label class='name_size'>名称名称</label>
+    <label class='name_size'>{{itemName.name_input}}</label>
   </view>
 
   <view class='device_item'>
     <label class='device_name'>设备</label>
-    <label class='device_id'>RX2345678</label>
+    <label class='device_id'>{{itemName.deviceid_input}}</label>
   </view>
-  <view class='time_item'>
+  <view class='time_item' >
     <label class='maede_time'>创建时间</label>
-    <label class='time_size'>2017-09-10 12:23</label>
+    <label class='time_size'>{{itemName.add_time}}</label>
   </view>
-  <view class='threshold-value_item'>
+  <view class='threshold-value_item' >
     <label class='threshold-value_name'>阈值</label>
-    <label class='threshold-value_size'>xxxxxxxxxxxxx</label>
+    <label class='threshold-value_size'>{{itemName.threshold_input}}</label>
   </view>
-  <view class='alarms_item'>
+  <view class='alarms_item' >
     <label class='number_alarms'>告警次数</label>
-    <label class='alarms_size'>12</label>
+    <label class='alarms_size'>{{itemName.num}}</label>
   </view>
 </view>

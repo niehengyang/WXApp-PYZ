@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    array: [{
+      deviceId: "设备RE2344677", tel: "北京市海淀区知春路9号", sensitivity_size: "xxxxxxxx", 
+      numbering_size: "xxxxxxxx", status_value:"良好",humidity_size: "78%", temperature_size: "31℃" }]
   },
 
   /**

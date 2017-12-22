@@ -5,13 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    
   },
   formSubmit: function (e){
-    var str = e.detail.value;
     wx.redirectTo({
-      url: '/pages/task/task?str='+str ,
+      url: '/pages/task/task?str=' + e.detail.value,
+     
     })
-    console.log(str)
+    console.log(e.detail.value)
   },
   /**
    * 生命周期函数--监听页面加载

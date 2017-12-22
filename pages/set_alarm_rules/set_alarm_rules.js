@@ -1,12 +1,11 @@
-// pages/alert_details/alert_details.js
+// pages/set_alarm_rules/set_alarm_rules.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    //模拟从服务器获取数据
-    array: [{ device_name: "xerseef33455", exception_state: "温度过高", alarm_time: "2017-09-10 12:23", Level: "最高级", failure_details: "xxxxxxxxxxxxx" }]
+  
   },
 
   /**
@@ -61,21 +60,7 @@ Page({
   /**
    * 用户点击右上角分享
    */
+  onShareAppMessage: function () {
   
-  onShareAppMessage: function (res) {
-    if (res.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(res.target)
-    }
-    return {
-      title: '自定义转发标题',
-      path: '/page/user?id=123',
-      success: function (res) {
-        // 转发成功
-      },
-      fail: function (res) {
-        // 转发失败
-      }
-    }
   }
 })

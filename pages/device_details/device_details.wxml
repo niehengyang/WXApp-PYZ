@@ -1,23 +1,23 @@
 <!--device_details.wxml-->
-<view class='page_start'>
+<view class='page_start' wx:for="{{array}}" wx:for-item="item" wx:for-index="idx"> 
   <view class='group_info'>
     <view class='group-name'>
-      <label class='group_name'>设备RE2344677</label>
+      <label class='group_name'>{{item.deviceId}}</label>
     </view>
     <view class='tel_item'>
       <image class='address_icon' src='/images/device/address.svg'></image>
-      <label class='address_value'>地址:北京市海淀区知春路9号</label>
+      <label class='address_value'>地址:{{item.tel}}</label>
     </view>
   </view>
   <view class='device-status_box'>
     <view class='status_left'>
       <view class='attribute_item'>
         <label class='device_attribute'>灵敏度:</label>
-        <label class='attaribute_size'>xxxxxxxx</label>
+        <label class='sensitivity_size'>{{item.sensitivity_size}}</label>
       </view>
       <view class='attribute_item'>
         <label class='device_attribute'>编号:</label>
-        <label class='attaribute_size'>xxxxxxxx</label>
+        <label class='numbering_size'>{{item.numbering_size}}</label>
       </view>
       <view class='attribute_item'>
         <label class='device_attribute'>属性3:</label>
@@ -31,18 +31,18 @@
     <view class='status_right'>
       <view class='status_item'>
         <label class='status_name'>状态:</label>
-        <label class='status_value'>良好</label>
+        <label class='status_value'>{{item.status_value}}</label>
       </view>
     </view>
   </view>
   <view class='status-show_box'>
     <view class='humidity_item'>
       <image class='humidity_svg' src='/images/device/humidity.svg'></image>
-      <label class='humidity_size'>78%</label>
+      <label class='humidity_size'>{{item.humidity_size}}</label>
     </view>
     <view class='temperature_item'>
       <image class='temperature_svg' src='/images/device/temperature.svg'></image>
-      <label class='temperature_size'>31℃</label>
+      <label class='temperature_size'>{{item.temperature_size}}</label>
     </view>
     <view class='wind-power_item'>
       <image class='wind_svg' src='/images/device/wind.svg'></image>

@@ -10,6 +10,9 @@ Page({
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 10,
+    array: [{ team_name:"设备组名称",deviceId: "设备RE2344677", tel: "北京市海淀区知春路9号", humidity_size: "78%", temperature_size: "31℃" },
+      { team_name: "设备组名称", deviceId: "设备RE2344677", tel: "北京市海淀区知春路9号", humidity_size: "78%", temperature_size: "31℃" },
+      { team_name: "设备组名称",deviceId: "设备RE2344677", tel: "北京市海淀区知春路9号", humidity_size: "78%", temperature_size: "31℃" }],
     inputShowed: false,
     sliderWidth:'',
     inputVal: ""

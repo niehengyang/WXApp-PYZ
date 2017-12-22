@@ -5,7 +5,7 @@
       <view class="weui-navbar">
         <block wx:for="{{tabs}}" wx:key="*this">
           <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
-            <view class="weui-navbar__title">{{item}}</view> 
+            <view class="weui-navbar__title">{{item}}</view>
           </view>
         </block>
         <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
@@ -13,36 +13,18 @@
       <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
         <view class="weui-tab__panel">
           <view class='already-processed_box'>
-            <view class='processed_item' bindtap='alert_details01'>
-              <label class='red_icon'></label>
-              <view class='device_item'>
-                <view class='device_label'>
-                  <label class='devie_name'>设备名称888888</label>
-                  <label class='device_style'>温度过高</label>
+            <block wx:for="{{array}}" wx:for-item="item" wx:for-index="item.length">
+              <view class='processed_item' bindtap='alert_details01'>
+                <label class='red_icon'></label>
+                <view class='device_item'>
+                  <view class='device_label'>
+                    <label class='devie_name'>{{item.device_name}}</label>
+                    <label class='device_style'>{{item.exception_state}}</label>
+                  </view>
+                  <label class='time_label'>{{item.alarm_time}}</label>
                 </view>
-                <label class='time_label'>2017-07-10 12：30</label>
               </view>
-            </view>
-            <view class='processed_item'>
-              <label class='red_icon'></label>
-              <view class='device_item'>
-                <view class='device_label'>
-                  <label class='devie_name'>设备名称888888</label>
-                  <label class='device_style'>掉线</label>
-                </view>
-                <label class='time_label'>2017-07-10 12：30</label>
-              </view>
-            </view>
-            <view class='processed_item'>
-              <label class='red_icon'></label>
-              <view class='device_item'>
-                <view class='device_label'>
-                  <label class='devie_name'>设备名称888888</label>
-                  <label class='device_style'>温度过高</label>
-                </view>
-                <label class='time_label'>2017-07-10 12：30</label>
-              </view>
-            </view>
+            </block>
           </view>
         </view>
       </view>
