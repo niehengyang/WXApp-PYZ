@@ -37,12 +37,20 @@ page {
   background: #0076ff;
   border-radius: 8rpx;
   font-size: 32rpx;
-  color: #fff;
   letter-spacing: 30rpx;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 2.55555556;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
 }
 
 .username_item, .password_item {

@@ -1,5 +1,5 @@
 <!--alarm_rules.wxml-->
-<view class='addtask_item' bindtap='add_alarm_page'>
+<view class='addtask_item' bindtap='add_alarm_rules'>
   <view class='addtask_btn_item'>
     <image class='addtask_btn' src='/images/device/add.svg'></image>
   </view>

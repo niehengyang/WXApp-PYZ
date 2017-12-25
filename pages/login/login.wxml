@@ -14,7 +14,7 @@
        bindinput='passWordInput' placeholder='输入密码' bindfocus='password_focus_on'
         bindblur='password_focus_off'>{{ userPassword}}</input>
     </view>
-    <button form-type='submit' class='login_submit' bindtap="loginBtnClick">登录</button> 
+    <button form-type='submit' class='login_submit' bindtap="loginBtnClick" >登录</button> 
   </form>
   <view class='page_ft'>
    <view class="xia">

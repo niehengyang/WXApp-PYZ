@@ -44,7 +44,7 @@ page {
 
 .name_size, .device_id, .time_size, .threshold-value_size {
   height: 100%;
-  width: 300rpx;
+  width: 400rpx;
   font-size: 32rpx;
   color: rgba(142, 152, 180, 0.7);
   letter-spacing: 0.24rpx;

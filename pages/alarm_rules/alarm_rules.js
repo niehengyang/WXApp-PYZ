@@ -13,9 +13,9 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  add_alarm_page:function(){
+  add_alarm_rules:function(){
     wx.navigateTo({
-      url: '/pages/add_alarm/add_alarm',
+      url: '/pages/set_alarm_rules/set_alarm_rules',
     })
   },
   onLoad: function (options) {

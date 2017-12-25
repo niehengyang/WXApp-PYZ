@@ -116,7 +116,8 @@
 				{
 					"id": -1,
 					"name": "设置告警规则",
-					"pathName": "pages/set_alarm_rules/set_alarm_rules"
+					"pathName": "pages/set_alarm_rules/set_alarm_rules",
+					"query": ""
 				}
 			]
 		}

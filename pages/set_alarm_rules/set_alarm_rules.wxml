@@ -1,19 +1,42 @@
 <!--set_alarm_rules.wxml-->
 <view class='page'>
-<view class='alarm_name_item'>
-<label class='alarm_name_label'>告警名称</label>
-<label class='alarm_name'>{{item.alarm_name}}</label>
-</view>
-<view class='alarm_condition_item'>
+  <view class='alarm_name_item'>
+    <label class='alarm_name_label'>告警名称</label>
+    <label class='alarm_name'>{{alarm_name}}</label>
+  </view>
+  <view class='alarm_condition_box'>
+    <view class='crad_title'>告警条件{{index}}</view>
+    <view class='set_temperature_item' wx:for='{{index}}' wx:key="id" wx:for-item="item" wx:for-index="idx" >
+      <picker class='set_alarm_style' bindchange="bind_alarm_style" value="{{alarm_style_index}}" range="{{alarm_style}}">
+        <text class='alarm_style' type="default">{{alarm_style[alarm_style_index]}}</text>
+      </picker>
+      <picker class='set_alarm_condition' bindchange="bind_alarm_condition" value="{{alarm_condition_index}}" range="{{alarm_condition}}">
+        <text class='alarm_condition' type="default">{{alarm_condition[alarm_condition_index]}}</text>
+      </picker>
+      <view class='set_size' wx:if='{{alarm_condition_index==2}}'>
+        <input class='size_input_fir' placeholder='20' placeholder-class='input-placeholder'></input>
+        <label class='thread'></label>
+        <input class='size_input_end' placeholder='100' placeholder-class='input-placeholder'></input>
+      </view>
+      <view class='set_size' wx:else>
+        <input class='size_input' placeholder='20' placeholder-class='input-placeholder'></input>
+      </view>
+      <icon type='clear' class='del_icon' bindtap='del_item'></icon>
+    </view>
+    <view class='set_humidity_item'>
 
-</view>
-<view class='add_alarmcondition_item'>
+    </view>
+  </view>
+  <button class='add_alarmcondition_item' bindtap='additem'>
+    <view class='addalarm_btn_item'>
+    <image class='addalarm_btn' src='/images/device/add.svg'></image>
+  </view>
+  <label class='add_alarm' >添加告警条件</label>
+  </button>
+  <view class='inform_way_item'>
 
-</view>
-<view class='inform_way_item'>
+  </view>
+  <view class='btn_item'>
 
-</view>
-<view class='btn_item'>
-
-</view>
+  </view>
 </view>
