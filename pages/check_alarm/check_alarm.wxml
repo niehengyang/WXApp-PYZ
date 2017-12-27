@@ -1,4 +1,4 @@
-<!--set_alarm_rules.wxml-->
+<!--check_alarm.wxml-->
 <view class='page'>
   <view class='alarm_name_item'>
     <label class='alarm_name_label'>告警名称</label>
@@ -6,7 +6,7 @@
   </view>
   <view class='alarm_condition_box' wx:for='{{index}}' wx:for-index="idx">
     <view class='crad_title'>告警条件{{idx+1}}</view>
-    <view class='set_temperature_item'  wx:key="id" wx:for-item="item" >
+    <view class='set_temperature_item' wx:key="id" wx:for-item="item">
       <picker class='set_alarm_style' bindchange="bind_alarm_style" value="{{index[idx].alarm_style_index}}" range="{{alarm_style}}">
         <text class='alarm_style' type="default">{{alarm_style[index[idx].alarm_style_index]}}</text>
       </picker>
@@ -21,25 +21,19 @@
       <view class='set_size' wx:else>
         <input class='size_input' placeholder='20' placeholder-class='input-placeholder'></input>
       </view>
-      <icon type='clear' class='del_icon' bindtap='del_item'></icon>
     </view>
   </view>
-  <button class='add_alarmcondition_item' bindtap='additem'>
-    <view class='addalarm_btn_item'>
-      <image class='addalarm_btn' src='/images/device/add.svg'></image>
-    </view>
-    <label class='add_alarm'>添加告警条件</label>
-  </button>
   <view class='inform_way_item'>
     <view class='crad_title'>通知方式</view>
     <checkbox-group class="inform_way_chack" bindchange="checkboxChange" wx:for-items="{{items}}">
-      <label class="checkbox" > {{item.value}}
+      <label class="checkbox"> {{item.value}}
         <checkbox value="{{item.name}}" checked="{{item.checked}}" />
       </label>
     </checkbox-group>
   </view>
   <view class='btn_item'>
-    <button class='add_btn' bindtap='add_alarm_btn'>添加</button>
-    <button class='cancel_btn' bindtap='cancel_alarm_btn'>取消</button>
+    <button class='editor_btn' bindtap='editor_btn' style='display:block'>{{btn_value}}</button>
+    <button class='save_btn' bindtap='save_btn' style='display:none'>保存</button>
+    <button class='del_btn' bindtap='del_btn'>删除</button>
   </view>
 </view>

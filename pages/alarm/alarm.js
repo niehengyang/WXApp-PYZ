@@ -9,9 +9,10 @@ Page({
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 10,
-    array: [{ time_value: "2017/12/22", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time:"2017-07-10 12：30"},
-      { time_value: "2017/12/22", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time: "2017-07-10 12：30" }, 
-      { time_value: "2017/12/22", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time: "2017-07-10 12：30" }],
+    //模拟从服务器获取数据
+    array: [{ time_value: "2017/12/27", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time:"2017-07-10 12：30"},
+      { time_value: "2017/12/28", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time: "2017-07-10 12：30" }, 
+      { time_value: "2017/12/29", task_name: "任务名称888888", alarm_size: "213", alarm_reason: "实时温度23℃，超出13℃-17℃", task_time: "2017-07-10 12：30" }],
     inputShowed: false,
     inputVal: ""
   },
@@ -39,6 +40,11 @@ Page({
   alarm_rule_page:function(){
 wx.navigateTo({
   url: '/pages/alarm_rules/alarm_rules',
+})
+  },
+  chack_alarm:function(){
+wx.navigateTo({
+  url: '/pages/check_alarm/check_alarm',
 })
   },
   /**

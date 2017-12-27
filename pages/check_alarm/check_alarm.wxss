@@ -1,4 +1,4 @@
-/**set_alarm_rules.wxss**/
+/**check_alarm.wxss**/
 
 page {
   background: #1a203b;
@@ -99,11 +99,6 @@ page {
   text-align: center;
 }
 
-.del_icon {
-  width: 48rpx;
-  height: 48rpx;
-}
-
 .input-placeholder {
   font-size: 32rpx;
   color: #8e98b4;
@@ -127,46 +122,6 @@ page {
   font-size: 32rpx;
   color: #8e98b4;
   letter-spacing: 0.24rpx;
-}
-
-.add_alarmcondition_item {
-  width: 690rpx;
-  height: 140rpx;
-  background: #fff;
-  display: flex;
-  border-radius: 8rpx;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  margin-top: 30rpx;
-}
-
-.addalarm_btn {
-  width: 80rpx;
-  height: 80rpx;
-  display: flex;
-  align-items: center;
-}
-
-.add_alarm {
-  width: 220rpx;
-  height: 120rpx;
-  color: #1a203b;
-  font-size: 32rpx;
-  letter-spacing: 0.24rpx;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.addalarm_btn_item {
-  width: 80rpx;
-  height: 100%;
-  padding-top: 5rpx;
-  display: flex;
-  align-items: center;
-  align-content: center;
 }
 
 .inform_way_item {
@@ -206,34 +161,45 @@ page {
 
 .btn_item {
   width: 100%;
-  height: 150rpx;
-  margin-top: 30rpx;
+  height: 260rpx;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.add_btn {
-  width: 320rpx;
-  height: 100rpx;
+.editor_btn {
+  width: 690rpx;
+  height: 88rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 24rpx;
   background: #0076ff;
   border-radius: 8rpx;
-  font-size: 36rpx;
-  letter-spacing: 0.24rpx;
-  color: #fff;
-  text-align: center;
+  margin-bottom: 30rpx;
 }
 
-.cancel_btn {
-  width: 320rpx;
-  height: 100rpx;
-  background: #1a203b;
-  font-size: 36rpx;
-  letter-spacing: 0.24rpx;
-  border: 2rpx solid #0076ff;
-  border-radius: 8rpx;
-  color: #0076ff;
+.save_btn {
+  width: 690rpx;
+  height: 88rpx;
   text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 24rpx;
+  background: #0076ff;
+  border-radius: 8rpx;
+  margin-bottom: 30rpx;
+}
+
+.del_btn {
+  width: 690rpx;
+  height: 88rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 24rpx;
+  background: #c00;
+  border-radius: 8rpx;
 }

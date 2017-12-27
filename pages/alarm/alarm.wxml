@@ -19,7 +19,7 @@
         <view class='already-processed_box' bindtap='Pending'>
           <label class='date_label' >{{time_value}}</label>
           <block wx:if="{{item.time_value==time_value}}" wx:for="{{array}}" wx:for-item="item">
-            <view class='processed_item' bindtap=''>
+            <view class='processed_item' bindtap='chack_alarm'>
               <label class='red_icon'></label>
               <view class='device_item'>
                 <view class='device_label'>

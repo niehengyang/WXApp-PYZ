@@ -16,6 +16,7 @@
     "pages/device_details/device_details",
     "pages/alarm_rules/alarm_rules",
     "pages/set_alarm_rules/set_alarm_rules",
+    "pages/check_alarm/check_alarm",
     "pages/logs/logs"
   ],
   "window": {
