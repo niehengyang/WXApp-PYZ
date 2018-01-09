@@ -17,6 +17,8 @@
     "pages/alarm_rules/alarm_rules",
     "pages/set_alarm_rules/set_alarm_rules",
     "pages/check_alarm/check_alarm",
+    "pages/Appearance_level_contest/Appearance_level_contest",
+    "pages/ranking_page/ranking_page",
     "pages/logs/logs"
   ],
   "window": {

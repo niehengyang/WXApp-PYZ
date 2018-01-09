@@ -1,0 +1,16 @@
+
+<view class='add_box' >
+<image src='/images/addpage/ranking.png' style='width:100%; height:200rpx;'></image>
+<button class='add_group_btn' open-type="share" bindtap='add_group'>立即参与</button>
+</view>
+
+<view class='group_list_box'>
+<text>我参加的</text>
+<text class='prompt_none' wx:if="{{List[0]==null}}">你还未参加任何比拼</text>
+<view class='group_list_item'>
+<view class='group_card' wx:for="{{List}}" bindtap='card_details'>
+<text class='group_name'>{{item.group_name}}</text>
+<text class='ranking'>我的排名：{{item.my_ranking}}</text>
+</view>
+</view>
+</view>

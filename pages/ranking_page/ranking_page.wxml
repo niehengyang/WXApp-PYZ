@@ -1,0 +1,30 @@
+<view class='no_ranking' wx:if='{{List==[]}}'>尚无排名</view>
+<view class='top_box' >
+<view class=''>{{group_name}}颜值排行榜</view>
+<view class='Head_portrait' >
+<image src='{{user_logo}}' style='width:200rpx; height:200rpx;'></image>
+<text class='user_name'>{{user_name}}</text>
+</view>
+</view>
+
+<view class='other_people_box' wx:for='{{List}}'>
+<view class='user_ranking_card' wx:if='{{item.ranking>1}}'>
+<image src='{{item.user_logo}}' style='width:100rpx; height:100rpx;'></image>
+<text class='num'>名次：{{item.ranking}}</text>
+</view>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="我的" cancel-text="关闭"  confirm-text="再试一次" bindcancel="cancel"  bindconfirm="confirm">  
+  <view class='model_card'>
+    <text class='appearance'>颜值：{{my_ifo.appearance}}</text>
+    <text class='ranking'>排名：{{my_ifo.ranking}}</text>
+    </view>  
+</modal>
+
+<view class='suspension_box1' bindtap='join_ranking' wx:if='{{my_ifo.ranking==0}}'>
+<text class='self_ranking'  type="primary" >点击参加</text>
+</view>
+<view class='suspension_box' bindtap='update_ranking' wx:if='{{my_ifo.ranking!=0}}'>
+<text class='self_ranking'  type="primary" >我的排名：{{my_ifo.ranking}}</text>
+</view>
+
