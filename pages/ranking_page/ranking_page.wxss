@@ -5,6 +5,12 @@ page {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #f2eada;
+}
+
+.bg_img {
+  width: 100%;
+  height: 100%;
 }
 
 .top_box {
@@ -15,24 +21,64 @@ page {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 20;
 }
 
+.bg_word {
+  width: 100%;
+  height: 460rpx;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+}
+.logo_item{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  width: 100%;
+  text-align: center;
+}
 .Head_portrait {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.icon_logo{
+  width: 100%;
+  height: 80rpx;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:55%;
+}
+.other_people_box {
+  margin-top: 460rpx;
+  position: relative;
 }
 
-.other_people_box {
+.other_people_box, .user_ranking_item {
   width: 100%;
   display: flex;
   align-content: center;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 .user_ranking_card {
   width: 100%;
+  border-radius: 10rpx;
   display: flex;
   align-content: center;
   align-items: center;
@@ -42,26 +88,68 @@ page {
 }
 
 .num {
-  width: 50%;
+  width: 20%;
   text-align: center;
+  font-size: 36rpx;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-style: italic;
+}
+.colorChange2{
+  color: darkorange;
+}
+.colorChange3{
+  color: gold;
+}
+.appearance{
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-weight: bold;
+}
+.user_name{
+  font-family: Arial, Helvetica, sans-serif; 
+}
+.mid_item {
+  width: 60%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-indent: 30rpx;
 }
 
 .suspension_box, .suspension_box1 {
   width: 100%;
-  height: 88rpx;
-  border: 2rpx solid bisque;
-  background-color: blue;
+  height: 100rpx;
+  border: 2rpx solid crimson;
+  background-color: #694d9f;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
   border-radius: 8rpx;
   position: fixed;
   bottom: 0;
+  z-index: 2;
 }
-.model_card{
+
+.model_card {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: center;
+}
+
+.my_appearance, .self_ranking, .tri_again {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 33.3%;
+  font-size: 32rpx;
+}
+
+.tri_again {
+  border: 2rpx solid crimson;
 }

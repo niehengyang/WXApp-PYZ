@@ -1,3 +1,5 @@
 {
-  "navigationBarTitleText": "颜值比拼"
+  "navigationBarTitleText": "颜值比拼",
+  "navigationBarBackgroundColor": "#f2eada",
+  "navigationBarTextStyle": "black"
 }

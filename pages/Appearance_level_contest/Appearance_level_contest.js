@@ -6,7 +6,7 @@ Page({
    */
   data: {
     //模拟数据
-    List: [{ group_name: 'xxx', my_ranking: 10 }, 
+    List: [{ group_name: 'xxx', my_ranking: 10, my_pho:'/images/addpage/my_pho.jpg' }, 
     { group_name: 'xxx', my_ranking: 10 }, 
     { group_name: 'xxx', my_ranking: 10 }],
   },
@@ -35,6 +35,7 @@ Page({
         console.log(res.data)
       }
     })
+
   },
 
   /**

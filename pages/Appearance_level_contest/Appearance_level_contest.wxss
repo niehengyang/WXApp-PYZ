@@ -4,6 +4,7 @@ page {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #f2eada;
 }
 
 .add_box {
@@ -15,16 +16,18 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 480rpx;
 }
 
 .add_group_btn {
-  width: 100%;
-  height: 100rpx;
+  width: 680rpx;
+  height: 88rpx;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30rpx;
+  background-color: #130c0e;
+  font-size: 32rpx;
+  color: #fffffb;
 }
 
 .group_list_item {
@@ -37,16 +40,30 @@ page {
 }
 
 .group_card {
-  width: 100%;
-  height: 88rpx;
+  width: 680rpx;
+  height: 400rpx;
   display: flex;
   align-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   border: 2rpx solid cyan;
+  margin-bottom: 30rpx;
+  background-color: #464547;
+  color: #fffffb;
+  justify-content: center;
 }
-
-.group_name, .ranking {
-  width: 50%;
-  text-align: center;
+.word_item{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  color: #ea66a6;
+}
+.group_name{
+font-size: 64rpx;
+}
+.ranking{
+font-size: 30rpx;
 }
