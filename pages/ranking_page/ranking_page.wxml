@@ -1,16 +1,15 @@
-<view class='no_ranking' wx:if='{{List[0]==null}}'>尚无排名</view>
 <view class='top_box' >
 <image class='bg_img' src='/images/addpage/bg2.png' mode='aspectFill'></image>
 <view class='bg_word'> 
-<view class='title'>{{group_name}}颜值排行榜</view>
+<view class='title'>{{group_name}} 颜值排行榜</view>
 <view class='Head_portrait' > 
 <view class='icon_logo'>
 <image src='/images/addpage/1.svg' style='height:80rpx; width:100rpx; margin-left:30rpx;'></image>
 </view>
 <view class='logo_item'>
-<image src='{{user_logo}}' style='width:200rpx; height:200rpx;' bindtap='show_pho_modal' data-id='{{data_id}}'></image>
+<image src='{{user_logo}}' style='width:180rpx; height:180rpx;  border-radius: 90rpx;' bindtap='show_pho_modal' data-id='{{data_id}}'></image>
 </view>
-<text class='user_name'>{{user_name}}</text>
+<text class='user_name' style='height:40rpx; width:100%;'>{{user_name}}</text>
 </view>
 </view>
 </view>
@@ -22,7 +21,15 @@
 </view>
 </modal>
 
+<text class='no_ranking' hidden="{{List.length==0? 'true':'false'}}">尚无排名</text>
+
 <view class='other_people_box' >
+<view class='title_item'>
+<view class='ranking_title'>排名</view>
+<view class='user_logo_title'>成员头像</view>
+<view class='nickname_title'>昵称</view> 
+<view class='appearance_title'>颜值</view>
+</view>
 <view class='user_ranking_item'  wx:for='{{List}}'>
 <!--
 <view class='my_pho_item' hidden='{{show_pho}}' style='width:680rpx;height:450rpx;'>
@@ -33,8 +40,8 @@
 <text class="num {{item.ranking ==2? 'colorChange2' : ''}} {{item.ranking ==3? 'colorChange3' : ''}}"   style='color:{{color_value}};' >{{item.ranking}}</text>
 <view class='mid_item'>
 <image src='{{item.user_logo}}' style='width:100rpx; height:100rpx;'></image>
-<text class='user_name'>{{item.user_name}}</text>
 </view>
+<text class='nickname'>{{item.user_name}}</text>
 <text class='appearance' style=''>{{item.appearance}}</text>
 </view>
 </view>
@@ -47,9 +54,10 @@
     </view>  
 </modal>
 -->
-<view class='suspension_box1' bindtap='join_ranking' wx:if='{{my_ifo.ranking==0}}'>
+<view class='suspension_box1' bindtap='join_ranking' wx:if='{{my_ifo.ranking==0}}||{{List.length==0}}'>
 <text class='self_ranking'  type="primary" >点击参加</text>
 </view>
+
 <view class='suspension_box' wx:if='{{my_ifo.ranking!=0}}'>
 <text class='my_appearance'>我的颜值：{{my_ifo.appearance}}</text>
 <text class='self_ranking'  type="primary" >我的排名：{{my_ifo.ranking}}</text>

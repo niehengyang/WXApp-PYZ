@@ -36,16 +36,19 @@ page {
   position: absolute;
   flex-direction: column;
 }
-.logo_item{
+
+.logo_item {
   width: 100%;
   height: 200rpx;
   display: flex;
   justify-content: center;
 }
-.title{
+
+.title {
   width: 100%;
   text-align: center;
 }
+
 .Head_portrait {
   width: 100%;
   display: flex;
@@ -53,17 +56,25 @@ page {
   align-items: center;
   justify-content: center;
 }
-.icon_logo{
+
+.user_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_logo {
   width: 100%;
   height: 80rpx;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  top:55%;
+  top: 58%;
 }
-.other_people_box {
-  margin-top: 460rpx;
+
+.other_people_box { 
+  margin-top: 490rpx;
   position: relative;
 }
 
@@ -74,10 +85,42 @@ page {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: #efefef;
+}
+
+.title_item {
+  width: 100%;
+  height: 30rpx;
+  background-color: #ced3d9;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  z-index: 20;
+  top: 460rpx;
+  font-size: 26rpx;
+}
+
+.ranking_title, .user_logo_title, .appearance_title {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nickname_title {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .user_ranking_card {
   width: 100%;
+  height: 100rpx;
   border-radius: 10rpx;
   display: flex;
   align-content: center;
@@ -89,26 +132,52 @@ page {
 
 .num {
   width: 20%;
-  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 36rpx;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  font-family: 'Lucida Sans',
+                 'Lucida Sans Regular',
+                 'Lucida Grande',
+                 'Lucida Sans Unicode',
+                 Geneva,
+                 Verdana,
+                 sans-serif;
   font-style: italic;
 }
-.colorChange2{
+
+.colorChange2 {
   color: darkorange;
 }
-.colorChange3{
+
+.colorChange3 {
   color: gold;
 }
-.appearance{
+
+.nickname {
+  width: 40%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  color: #E2754A;
+}
+
+.appearance {
+  width: 20%;
   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E2754A;
 }
-.user_name{
-  font-family: Arial, Helvetica, sans-serif; 
-}
+
 .mid_item {
-  width: 60%;
+  width: 20%;
   height: 100rpx;
   display: flex;
   align-items: center;
@@ -120,8 +189,7 @@ page {
 .suspension_box, .suspension_box1 {
   width: 100%;
   height: 100rpx;
-  border: 2rpx solid crimson;
-  background-color: #694d9f;
+  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,5 +219,5 @@ page {
 }
 
 .tri_again {
-  border: 2rpx solid crimson;
+  
 }
